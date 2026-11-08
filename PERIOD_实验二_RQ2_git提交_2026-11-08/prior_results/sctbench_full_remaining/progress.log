@@ -1,0 +1,38 @@
+[2026-11-02T06:27:59+00:00] ==== SCTBench FULL REMAINING START ====
+[2026-11-02T06:27:59+00:00] START Inspect_qsort_mt depth=3 wall=1800s bin=qsort_mt extra=-t 60
+[2026-11-02T06:29:01+00:00] DONE Inspect_qsort_mt status=INCOMPLETE_FAIL_RC1 errors=NA tests=0 dur=62s rc=1
+[2026-11-02T06:29:01+00:00] START Inspect_ctrace-test depth=3 wall=1800s bin=ctrace-test extra=-t 30
+[2026-11-02T06:29:02+00:00] DONE Inspect_ctrace-test status=INCOMPLETE_OK errors=NA tests=0 dur=1s rc=0
+[2026-11-02T06:29:02+00:00] START Splash2_fft depth=3 wall=1800s bin=FFT extra=-t 30
+[2026-11-02T06:29:07+00:00] DONE Splash2_fft status=INCOMPLETE_FAIL_RC1 errors=NA tests=0 dur=5s rc=1
+[2026-11-02T06:29:07+00:00] START Splash2_lu depth=3 wall=1800s bin=LU extra=-t 30
+[2026-11-02T06:29:12+00:00] DONE Splash2_lu status=INCOMPLETE_FAIL_RC1 errors=NA tests=0 dur=5s rc=1
+[2026-11-02T06:29:12+00:00] START Splash2_barnes depth=3 wall=3600s bin=BARNES extra=-t 30
+[2026-11-02T06:34:14+00:00] ==== SCTBench FULL REMAINING START (README args) ====
+[2026-11-02T06:34:14+00:00] START Inspect_qsort_mt wall=3600s depth=3 args=-y --no-prefix -d 3 -t 120 ./qsort_mt -n 32 -f 4 -h 3 -v
+[2026-11-02T06:36:16+00:00] DONE Inspect_qsort_mt status=BUGS_OK errors=139 tests=8648 dur=122s rc=0
+[2026-11-02T06:36:16+00:00] START Inspect_ctrace-test wall=1800s depth=3 args=-y --no-prefix -d 3 -t 30 ./ctrace-test 2
+[2026-11-02T06:36:19+00:00] DONE Inspect_ctrace-test status=BUGS_OK errors=4 tests=13 dur=3s rc=0
+[2026-11-02T06:36:19+00:00] START Splash2_fft wall=3600s depth=2 args=-y --no-prefix -d 2 -t 30 LOOP_UNWINDED_NUM=3 ./FFT -p2 -m2 -n4 -l4
+[2026-11-02T06:36:27+00:00] DONE Splash2_fft status=BUGS_OK errors=94 tests=194 dur=8s rc=0
+[2026-11-02T06:36:27+00:00] START Splash2_lu wall=3600s depth=2 args=-y --no-prefix -d 2 -t 30 ./LU -p2 -n2 -b1
+[2026-11-02T06:36:32+00:00] DONE Splash2_lu status=BUGS_OK errors=55 tests=114 dur=5s rc=0
+[2026-11-02T06:36:32+00:00] START Splash2_barnes wall=3600s depth=2 args=-y --no-prefix -d 2 -t 30 ./BARNES
+[2026-11-02T06:38:07+00:00] DONE Splash2_barnes status=BUGS_OK errors=342 tests=704 dur=95s rc=0
+[2026-11-02T06:38:07+00:00] START Chess_StateWSQ wall=3600s depth=3 args=-y -d 3 -t 10 ./StateWorkStealQueue 2 4 2
+[2026-11-02T15:17:35+08:00] MONITOR Chess_StateWSQ still running tests=14573 elapsed_approx=39m wall=3600s
+[2026-11-02T15:30:55+08:00] MONITOR Chess_StateWSQ tests=16446 ~52m into 3600s wall
+[2026-11-02T15:41:21+08:00] MONITOR Chess_StateWSQ timeout_etime=43m (build preceded timeout); tests=20284; expect wall end ~15:58 Asia/Shanghai
+[2026-11-02T08:06:18+00:00] DONE Chess_StateWSQ status=BUGS_INCOMPLETE_TIMEOUT_3600s errors=partial_62 tests=28210 dur=5290s rc=124
+[2026-11-02T08:06:18+00:00] START Chess_ILWSQState wall=3600s depth=3 args=-y -d 3 -t 10 ./InterlockedWorkStealQueueWithState 2 4 2
+[2026-11-02T16:07:48+08:00] MONITOR Chess_ILWSQState running; Chess_StateWSQ recorded BUGS_INCOMPLETE_TIMEOUT_3600s partial_62/28210
+[2026-11-02T09:38:16+00:00] DONE Chess_ILWSQState status=BUGS_INCOMPLETE_TIMEOUT_3600s errors=partial_87 tests=29998 dur=5518s rc=124
+[2026-11-02T09:38:16+00:00] START Inspect_boundedBuffer wall=3600s depth=3 args=-y --no-prefix -d 3 -t 10 ./boundedBuffer
+[2026-11-02T18:02:01+08:00] MONITOR Inspect_boundedBuffer timeout_etime=19m tests=0 still in pre-Start Testing (same ./boundedBuffer PID); wall continues to ~18:42 Asia/Shanghai
+[2026-11-02T18:39:21+08:00] MONITOR Inspect_boundedBuffer timeout_etime=46m tests=0 hung pre-Start; expect script timeout ~18:52 Asia/Shanghai
+[2026-11-02T11:01:35+00:00] DONE Inspect_boundedBuffer status=INCOMPLETE_TIMEOUT_3600s errors=NA tests=0 dur=4999s rc=124
+[2026-11-02T11:01:35+00:00] START CS_twostage_20 wall=3600s depth=3 args=-y -d 3 ./twostage_20_bad
+[2026-11-02T19:02:52+08:00] MONITOR boundedBuffer DONE INCOMPLETE_TIMEOUT_3600s tests=0; CS_twostage_20 started; folded summary into pack1 prior_results
+[2026-11-02T11:45:47+00:00] DONE CS_twostage_20 status=BUGS_OK errors=3075 tests=62431 dur=2652s rc=0
+[2026-11-02T11:45:47+00:00] START CS_reorder_50 wall=3600s depth=3 args=-y -d 3 ./reorder_50_bad
+[2026-11-02T19:56:17+08:00] MONITOR CS_twostage_20 BUGS_OK errors=3075 tests=62431; CS_reorder_50 running; folded pack1 prior before 21:00

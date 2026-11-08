@@ -1,0 +1,45 @@
+# Docker / runtime noise
+docker-data/
+docker-run/
+*.sock
+*.pid
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Logs & raw dumps (keep summarized TSV/CSV)
+*.log
+logs/
+results/**/logs/
+results/raw/
+!prior_results/**/*.log
+!prior_results/**/logs_sample/**
+
+# Large / binary artifacts teammates should not commit
+*.tar
+*.tar.gz
+*.img
+*.qcow2
+*.iso
+third_party/sctbench/
+third_party/maple/
+third_party/**/pin/
+*.so
+*.a
+*.o
+*.bin
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Queue master logs under results (re-created each run)
+results/queue_*.log
+results/**/queue_*.log

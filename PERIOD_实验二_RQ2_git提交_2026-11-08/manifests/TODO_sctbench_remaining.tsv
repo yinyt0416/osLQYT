@@ -1,0 +1,5 @@
+subject	status	notes
+CS_reorder_50	PENDING	in sctbench_full_remaining queue
+CS_twostage_50	PENDING	in sctbench_full_remaining queue
+CS_reorder_100	PENDING	in sctbench_full_remaining queue
+CS_twostage_100	PENDING	in sctbench_full_remaining queue

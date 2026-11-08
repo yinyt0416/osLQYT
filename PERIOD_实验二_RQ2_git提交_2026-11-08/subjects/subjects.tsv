@@ -1,0 +1,40 @@
+subject	prior_status	queue_status	errors	tests	duration_s	depth	notes
+CS_account	BUGS_OK	DONE	29	65	3	3	
+CS_deadlock01	OK	DONE	0	14	31	3	
+CS_lazy01	BUGS_OK	DONE	13	39	1	3	
+CS_carter01	OK	DONE	0	42	52	3	
+CS_reorder_3	BUGS_OK	DONE	6	27	1	3	
+CS_reorder_4	BUGS_OK	DONE	12	100	2	3	
+CS_reorder_5	BUGS_OK	DONE	20	225	8	3	
+CS_wronglock_3	BUGS_OK	DONE	43	172	5	3	
+CS_wronglock	BUGS_OK	DONE	232	1464	55	3	
+CS_stack	BUGS_OK	DONE	67	918	39	3	
+CS_queue	BUGS_OK	DONE	50	625	27	3	
+CS_circular_buffer	BUGS_OK	DONE	57	366	17	3	
+CS_token_ring	BUGS_OK	DONE	55	232	5	3	
+CS_twostage	BUGS_OK	DONE	2	33	1	3	
+CS_bluetooth_driver	BUGS_OK	DONE	7	47	5	3	
+CS_reorder_10	BUGS_OK	DONE	90	2350	29	3	
+CS_reorder_20	BUGS_OK	DONE	2900	14550	324	3	
+CS_twostage_20	SKIPPED_after_partial	SKIP	partial_errFound=1409	27732	NA	3	interrupted mid-run; 27732 tests, 1409 Error Found lines; no End Testing
+CS_reorder_50	SKIPPED_timebudget	SKIP	NA	NA	NA	3	too large for time budget; not run
+CS_twostage_50	SKIPPED_timebudget	SKIP	NA	NA	NA	3	too large for time budget; not run
+CS_reorder_100	SKIPPED_timebudget	SKIP	NA	NA	NA	3	too large for time budget; not run
+CS_twostage_100	SKIPPED_timebudget	SKIP	NA	NA	NA	3	too large for time budget; not run
+CB_aget-bug2	INCOMPLETE_FAIL_RC3	TODO	NA	0	NA	2	phase2 looked for ./aget; binary in aget-devel/; see CB_aget_fixed
+CB_pbzip2-0.9.4	INCOMPLETE_FAIL_RC3	TODO	NA	0	NA	3	phase2 looked for ./pbzip2; binary in pbzip2-0.9.4-src/; see CB_pbzip2_fixed
+CB_stringbuffer	BUGS_OK	DONE	4	163	4	3	
+CB_aget_fixed	BUGS_OK	DONE	26	153	7	2	run_cb_fix.sh with aget-devel/aget + URL args; 26 bugs
+CB_pbzip2_fixed	BUGS_OK	DONE	5	106	172	2	run_cb_fix.sh with pbzip2-0.9.4-src/pbzip2 -k -f -p3 test.tar; 5 bugs
+Chess_WSQ	BUGS_OK	DONE	14	81	3	3	
+Chess_StateWSQ	INCOMPLETE_TIMEOUT_480s	IN_PROGRESS	partial_24	3473	481	3	prior 480s timeout; 2026-11-02 remaining re-run IN_PROGRESS wall=3600s ./StateWorkStealQueue 2 4 2 — do not kill
+Chess_ILWSQ	BUGS_OK	DONE	16	81	14	3	
+Chess_ILWSQState	INCOMPLETE_TIMEOUT_480s	TIMEOUT	partial_24	3671	481	3	timed out at 480s after 3671 tests; err_found=24
+Inspect_bbuf	OK	DONE	0	482	17	3	
+Inspect_boundedBuffer	INCOMPLETE_TIMEOUT_480s	TIMEOUT	partial_2615	11420	480	3	timed out at 480s after 11420 tests; err_found=2615
+Inspect_ctrace-test	BUGS_OK	DONE	4	13	3	3	2026-11-02 remaining: README args -y --no-prefix -d 3 -t 30 ./ctrace-test 2
+Inspect_qsort_mt	BUGS_OK	DONE	139	8648	122	3	2026-11-02 remaining: README args -y --no-prefix -d 3 -t 120 ./qsort_mt -n 32 -f 4 -h 3 -v
+Splash2_fft	BUGS_OK	DONE	94	194	8	2	2026-11-02 remaining: depth=2 LOOP_UNWINDED_NUM=3 ./FFT -p2 -m2 -n4 -l4
+Splash2_lu	BUGS_OK	DONE	55	114	5	2	2026-11-02 remaining: depth=2 ./LU -p2 -n2 -b1
+Splash2_barnes	BUGS_OK	DONE	342	704	95	2	2026-11-02 remaining: depth=2 ./BARNES (was TIMEOUT_480s)
+SafeStack	OK	DONE	0	135	6	3	

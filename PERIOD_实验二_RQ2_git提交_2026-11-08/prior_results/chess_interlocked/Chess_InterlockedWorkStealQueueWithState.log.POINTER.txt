@@ -1,0 +1,7 @@
+# POINTER only — full Chess InterlockedWorkStealQueueWithState log NOT shipped (~142 MiB)
+author_tree_path: <PERIOD image or author results>/logs/Chess_InterlockedWorkStealQueueWithState.log
+size_bytes: 148134240
+last_test: 331200
+mtime: 2026-11-07 18:17:14 Asia/Shanghai (CST)
+do_not_git_add: the full .log file
+see_also: Chess_Interlocked_status_2026-11-07.md

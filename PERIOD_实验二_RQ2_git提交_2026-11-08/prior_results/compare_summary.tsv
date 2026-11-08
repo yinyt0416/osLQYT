@@ -1,0 +1,254 @@
+tool	subject	bugs_found	schedules	time_s	status	notes
+Period	CVE-2016-7911	8	19	1	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2009-3547	1	2	1	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2011-2183	15	28	2	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2013-1792	1	9	1	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2015-7550	6	14	2	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2016-1972	5	10	2	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2016-1973	6	14	1	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2016-9806	4	42	2	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2017-6346	81	182	7	PRIOR_REF	from acceptance_merged CVE
+Period	CVE-2017-15265	1	96	2	PRIOR_REF	from acceptance_merged CVE
+Period	CS_account	29	65	3	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_deadlock01	0	14	31	PRIOR_REF	from acceptance_merged clean SCTBench status=OK
+Period	CS_lazy01	13	39	1	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_carter01	0	42	52	PRIOR_REF	from acceptance_merged clean SCTBench status=OK
+Period	CS_reorder_3	6	27	1	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_reorder_4	12	100	2	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_reorder_5	20	225	8	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_wronglock_3	43	172	5	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_wronglock	232	1464	55	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_stack	67	918	39	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_queue	50	625	27	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_circular_buffer	57	366	17	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_token_ring	55	232	5	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_twostage	2	33	1	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_bluetooth_driver	7	47	5	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_reorder_10	90	2350	29	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_reorder_20	2900	14550	324	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CS_twostage_20	partial_errFound=1409	27732	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=SKIPPED_after_partial
+Period	CS_reorder_50	NA	NA	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=SKIPPED_timebudget
+Period	CS_twostage_50	NA	NA	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=SKIPPED_timebudget
+Period	CS_reorder_100	NA	NA	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=SKIPPED_timebudget
+Period	CS_twostage_100	NA	NA	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=SKIPPED_timebudget
+Period	CB_aget-bug2	NA	0	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_FAIL_RC3
+Period	CB_pbzip2-0.9.4	NA	0	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_FAIL_RC3
+Period	CB_stringbuffer	4	163	4	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CB_aget_fixed	26	153	7	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	CB_pbzip2_fixed	5	106	172	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	Chess_WSQ	14	81	3	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	Chess_StateWSQ	partial_24	3473	481	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_TIMEOUT_480s
+Period	Chess_ILWSQ	16	81	14	PRIOR_REF	from acceptance_merged clean SCTBench status=BUGS_OK
+Period	Chess_ILWSQState	partial_24	3671	481	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_TIMEOUT_480s
+Period	Inspect_bbuf	0	482	17	PRIOR_REF	from acceptance_merged clean SCTBench status=OK
+Period	Inspect_boundedBuffer	partial_2615	11420	480	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_TIMEOUT_480s
+Period	Inspect_ctrace-test	NA	0	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_OK
+Period	Inspect_qsort_mt	NA	0	NA	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_FAIL_RC1
+Period	Splash2_fft	NA	1	2	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_FAIL_RC139
+Period	Splash2_lu	NA	1	5	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_FAIL_RC139
+Period	Splash2_barnes	partial_1033	3324	481	PRIOR_REF	from acceptance_merged clean SCTBench status=INCOMPLETE_TIMEOUT_480s
+Period	SafeStack	0	135	6	PRIOR_REF	from acceptance_merged clean SCTBench status=OK
+IPB	CVE-2016-7911	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2009-3547	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2011-2183	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2013-1792	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2015-7550	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2016-1972	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2016-1973	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2016-9806	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2017-6346	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CVE-2017-15265	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_account	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_deadlock01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_lazy01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_carter01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_reorder_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_reorder_4	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_reorder_5	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_wronglock_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_wronglock	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_stack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_queue	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_circular_buffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_token_ring	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_twostage	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_bluetooth_driver	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_reorder_10	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CS_reorder_20	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CB_stringbuffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CB_aget_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	CB_pbzip2_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	Chess_WSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	Chess_ILWSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	Inspect_bbuf	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IPB	SafeStack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2016-7911	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2009-3547	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2011-2183	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2013-1792	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2015-7550	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2016-1972	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2016-1973	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2016-9806	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2017-6346	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CVE-2017-15265	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_account	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_deadlock01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_lazy01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_carter01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_reorder_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_reorder_4	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_reorder_5	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_wronglock_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_wronglock	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_stack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_queue	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_circular_buffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_token_ring	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_twostage	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_bluetooth_driver	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_reorder_10	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CS_reorder_20	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CB_stringbuffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CB_aget_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	CB_pbzip2_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	Chess_WSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	Chess_ILWSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	Inspect_bbuf	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+IDB	SafeStack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2016-7911	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2009-3547	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2011-2183	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2013-1792	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2015-7550	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2016-1972	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2016-1973	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2016-9806	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2017-6346	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CVE-2017-15265	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_account	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_deadlock01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_lazy01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_carter01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_reorder_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_reorder_4	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_reorder_5	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_wronglock_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_wronglock	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_stack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_queue	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_circular_buffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_token_ring	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_twostage	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_bluetooth_driver	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_reorder_10	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CS_reorder_20	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CB_stringbuffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CB_aget_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	CB_pbzip2_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	Chess_WSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	Chess_ILWSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	Inspect_bbuf	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+DFS	SafeStack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2016-7911	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2009-3547	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2011-2183	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2013-1792	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2015-7550	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2016-1972	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2016-1973	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2016-9806	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2017-6346	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CVE-2017-15265	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_account	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_deadlock01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_lazy01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_carter01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_reorder_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_reorder_4	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_reorder_5	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_wronglock_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_wronglock	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_stack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_queue	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_circular_buffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_token_ring	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_twostage	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_bluetooth_driver	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_reorder_10	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CS_reorder_20	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CB_stringbuffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CB_aget_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	CB_pbzip2_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	Chess_WSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	Chess_ILWSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	Inspect_bbuf	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+PCT	SafeStack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2016-7911	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2009-3547	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2011-2183	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2013-1792	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2015-7550	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2016-1972	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2016-1973	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2016-9806	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2017-6346	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CVE-2017-15265	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_account	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_deadlock01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_lazy01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_carter01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_reorder_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_reorder_4	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_reorder_5	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_wronglock_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_wronglock	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_stack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_queue	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_circular_buffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_token_ring	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_twostage	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_bluetooth_driver	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_reorder_10	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CS_reorder_20	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CB_stringbuffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CB_aget_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	CB_pbzip2_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	Chess_WSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	Chess_ILWSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	Inspect_bbuf	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Random	SafeStack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2016-7911	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2009-3547	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2011-2183	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2013-1792	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2015-7550	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2016-1972	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2016-1973	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2016-9806	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2017-6346	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CVE-2017-15265	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_account	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_deadlock01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_lazy01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_carter01	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_reorder_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_reorder_4	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_reorder_5	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_wronglock_3	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_wronglock	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_stack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_queue	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_circular_buffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_token_ring	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_twostage	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_bluetooth_driver	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_reorder_10	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CS_reorder_20	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CB_stringbuffer	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CB_aget_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	CB_pbzip2_fixed	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	Chess_WSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	Chess_ILWSQ	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	Inspect_bbuf	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)
+Maple	SafeStack	NA	NA	NA	NOT_RUN	NOT_RUN; build deferred — bro owns sctbench under PERIOD_full_repro; Pin/Maple need kernel<=3.x (host=6.12.94+)

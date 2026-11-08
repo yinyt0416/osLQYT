@@ -1,0 +1,6 @@
+PRIOR_REF for 实验二 / RQ2
+- PERIOD self-detection (smoke / ConVul CVE / SCTBench): summary_*.tsv, summary_full_final.tsv, logs_sample/
+- Chess Interlocked WithState: POINTER + status note only (full ~142 MiB log NOT shipped)
+- Baseline compare scaffolding: compare_summary.tsv, BUILD_STATUS.md — six baselines remain NOT_RUN
+Source: author runs through 2026-11-07 Asia/Shanghai; pack date 2026-11-08
+Read-only; do not overwrite. New runs go under results/.

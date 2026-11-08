@@ -1,0 +1,40 @@
+subject	status	errors	timeouts	tests	duration_s	depth	log	notes
+CS_account	BUGS_OK	29	0	65	3	3	/out/logs/CS_account.log	
+CS_deadlock01	OK	0	6	14	31	3	/out/logs/CS_deadlock01.log	
+CS_lazy01	BUGS_OK	13	0	39	1	3	/out/logs/CS_lazy01.log	
+CS_carter01	OK	0	10	42	52	3	/out/logs/CS_carter01.log	
+CS_reorder_3	BUGS_OK	6	0	27	1	3	/out/logs/CS_reorder_3.log	
+CS_reorder_4	BUGS_OK	12	0	100	2	3	/out/logs/CS_reorder_4.log	
+CS_reorder_5	BUGS_OK	20	0	225	8	3	/out/logs/CS_reorder_5.log	
+CS_wronglock_3	BUGS_OK	43	0	172	5	3	/out/logs/CS_wronglock_3.log	
+CS_wronglock	BUGS_OK	232	0	1464	55	3	/out/logs/CS_wronglock.log	
+CS_stack	BUGS_OK	67	0	918	39	3	/out/logs/CS_stack.log	
+CS_queue	BUGS_OK	50	0	625	27	3	/out/logs/CS_queue.log	
+CS_circular_buffer	BUGS_OK	57	0	366	17	3	/out/logs/CS_circular_buffer.log	
+CS_token_ring	BUGS_OK	55	0	232	5	3	/out/logs/CS_token_ring.log	
+CS_twostage	BUGS_OK	2	0	33	1	3	/out/logs/CS_twostage.log	
+CS_bluetooth_driver	BUGS_OK	7	0	47	5	3	/out/logs/CS_bluetooth_driver.log	
+CS_reorder_10	BUGS_OK	90	0	2350	29	3	/out/logs/CS_reorder_10.log	
+CS_reorder_20	BUGS_OK	2900	0	14550	324	3	/out/logs/CS_reorder_20.log	
+CS_twostage_20	SKIPPED_after_partial	partial_errFound=1409	NA	27732	NA	3	/out/logs/CS_twostage_20.log	interrupted mid-run; 27732 tests, 1409 Error Found lines; no End Testing
+CS_reorder_50	SKIPPED_timebudget	NA	NA	NA	NA	3	/out/logs/CS_reorder_50.log	too large for time budget; not run
+CS_twostage_50	SKIPPED_timebudget	NA	NA	NA	NA	3	/out/logs/CS_twostage_50.log	too large for time budget; not run
+CS_reorder_100	SKIPPED_timebudget	NA	NA	NA	NA	3	/out/logs/CS_reorder_100.log	too large for time budget; not run
+CS_twostage_100	SKIPPED_timebudget	NA	NA	NA	NA	3	/out/logs/CS_twostage_100.log	too large for time budget; not run
+CB_aget-bug2	INCOMPLETE_FAIL_RC3	NA	NA	0	NA	2	/out/logs/CB_aget-bug2.log	phase2 looked for ./aget; binary in aget-devel/; see CB_aget_fixed
+CB_pbzip2-0.9.4	INCOMPLETE_FAIL_RC3	NA	NA	0	NA	3	/out/logs/CB_pbzip2-0.9.4.log	phase2 looked for ./pbzip2; binary in pbzip2-0.9.4-src/; see CB_pbzip2_fixed
+CB_stringbuffer	BUGS_OK	4	0	163	4	3	/out/logs/CB_stringbuffer.log	
+CB_aget_fixed	BUGS_OK	26	0	153	7	2	/out/logs/CB_aget_fixed.log	run_cb_fix.sh with aget-devel/aget + URL args; 26 bugs
+CB_pbzip2_fixed	BUGS_OK	5	0	106	172	2	/out/logs/CB_pbzip2_fixed.log	run_cb_fix.sh with pbzip2-0.9.4-src/pbzip2 -k -f -p3 test.tar; 5 bugs
+Chess_WSQ	BUGS_OK	14	0	81	3	3	/out/logs/Chess_WSQ.log	
+Chess_StateWSQ	INCOMPLETE_TIMEOUT_480s	partial_24	NA	3473	481	3	/out/logs/Chess_StateWSQ.log	timed out at 480s after 3473 tests; err_found=24
+Chess_ILWSQ	BUGS_OK	16	0	81	14	3	/out/logs/Chess_ILWSQ.log	
+Chess_ILWSQState	INCOMPLETE_TIMEOUT_480s	partial_24	NA	3671	481	3	/out/logs/Chess_ILWSQState.log	timed out at 480s after 3671 tests; err_found=24
+Inspect_bbuf	OK	0	0	482	17	3	/out/logs/Inspect_bbuf.log	
+Inspect_boundedBuffer	INCOMPLETE_TIMEOUT_480s	partial_2615	NA	11420	480	3	/out/logs/Inspect_boundedBuffer.log	timed out at 480s after 11420 tests; err_found=2615
+Inspect_ctrace-test	INCOMPLETE_OK	NA	NA	0	NA	3	/out/logs/Inspect_ctrace-test.log	dry-run SEGV (TSAN); no End Testing
+Inspect_qsort_mt	INCOMPLETE_FAIL_RC1	NA	NA	0	NA	3	/out/logs/Inspect_qsort_mt.log	dry-run TimeoutExpired 5s
+Splash2_fft	INCOMPLETE_FAIL_RC139	NA	NA	1	2	3	/out/logs/Splash2_fft.log	segfault/signal 139 during run
+Splash2_lu	INCOMPLETE_FAIL_RC139	NA	NA	1	5	3	/out/logs/Splash2_lu.log	segfault/signal 139 during run
+Splash2_barnes	INCOMPLETE_TIMEOUT_480s	partial_1033	NA	3324	481	3	/out/logs/Splash2_barnes.log	timed out at 480s after 3324 tests; err_found=1033
+SafeStack	OK	0	0	135	6	3	/out/logs/SafeStack.log	
