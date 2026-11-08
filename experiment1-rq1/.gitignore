@@ -1,0 +1,33 @@
+# Generated results from future reruns
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Docker and runtime files
+docker-data/
+docker-run/
+*.sock
+*.pid
+
+# Build and large binary artifacts
+*.tar
+*.tar.gz
+*.img
+*.qcow2
+*.iso
+*.so
+*.a
+*.o
+*.bin
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

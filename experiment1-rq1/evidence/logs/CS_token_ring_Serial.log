@@ -1,0 +1,113 @@
+===== RQ1 CS_token_ring mode=Serial runner=run_Serial.py =====
+Everything's fine!
++ cd /workdir/PERIOD/evaluation/CS/token_ring
++ ./cleanDIR.sh
++ clang -g -emit-llvm -c ./token_ring_bad.c -o token_ring_bad.bc
++ /workdir/PERIOD/tool/staticAnalysis/staticAnalysis.sh token_ring_bad
+[*] Making static analysis directory
+[*] DIR: /workdir/PERIOD/evaluation/CS/token_ring
+[*] ROOT_DIR: /workdir/PERIOD
+[*] Generating mssa.token_ring_bad
+[*] Change format for instrumentation
+[*] Analyze Sensitive Memory Operations
+[*] Update Memory Group with Sensitive Memory Operations
+[*] Dumps mempairs and save it into .npz file
+-rw-r--r-- 1 root root  240 Nov  7 10:27 ConConfig.token_ring_bad
+-rw-r--r-- 1 root root 1.4K Nov  7 10:27 mempair.token_ring_bad
+-rw-r--r-- 1 root root  17K Nov  7 10:27 mempair.token_ring_bad.npz
+-rw-r--r-- 1 root root 1.6K Nov  7 10:27 mssa.token_ring_bad
+-rw-r--r-- 1 root root 1.8K Nov  7 10:27 so.token_ring_bad
+-rw-r--r-- 1 root root 8.0K Nov  7 10:27 token_ring_bad.bc
+-rw-rw-r-- 1 root root 1.1K Jan 16  2022 token_ring_bad.c
+/workdir/PERIOD/evaluation/CS/token_ring
++ export Con_PATH=/workdir/PERIOD/evaluation/CS/token_ring/ConConfig.token_ring_bad
++ Con_PATH=/workdir/PERIOD/evaluation/CS/token_ring/ConConfig.token_ring_bad
++ /workdir/PERIOD/tool/staticAnalysis/DBDS-INSTRU/dbds-clang-fast++ -g ./token_ring_bad.bc -o token_ring_bad -lpthread -ldl
+[DEBUG] The ConConfig file was successfully opened.
+[DEBUG] The file is /workdir/PERIOD/evaluation/CS/token_ring/ConConfig.token_ring_bad
+[DEBUG]
+[DEBUG] Instrumentation for token_ring_bad.c:16
+[DEBUG] Instrumentation for token_ring_bad.c:17
+[DEBUG] Instrumentation for token_ring_bad.c:18
+[DEBUG] Instrumentation for token_ring_bad.c:25
+[DEBUG] Instrumentation for token_ring_bad.c:26
+[DEBUG] Instrumentation for token_ring_bad.c:27
+[DEBUG] Instrumentation for token_ring_bad.c:34
+[DEBUG] Instrumentation for token_ring_bad.c:35
+[DEBUG] Instrumentation for token_ring_bad.c:36
+[DEBUG] Instrumentation for token_ring_bad.c:43
+[DEBUG] Instrumentation for token_ring_bad.c:44
+[DEBUG] Instrumentation for token_ring_bad.c:45
+opts: [('-y', ''), ('-d', '3'), ('-f', '10000')]
+args: ['./token_ring_bad']
+bugDepth: 3
+runs_limit: 10000
+
+
+[4;36mPerform Dry Run![0m
+
+[4;36mPerform DBDS Run with default system scheduling![0m
+sudo: unable to resolve host 029ab9e440fc: Resource temporarily unavailable
+
+--------------------------------------
+Runtime: 7550
+ThreadNum:  4
+MaxKpNum:  3
+TupleScheduling: 0
+kpNumArray: 3 3 3 3 
+prefix: []
+coverage_hashID: 81
+--------------------------------------
+Enter 'debug' to view the debug information
+Consider all variables
+
+[4;36mStart Testing![0m
+[Serial] N= 4 bugDepth= 3 period_limit= 6
+Targeting bugs that bug depth = 3 . Iterate for 4 periods
+[4;36mtest 0001:[0m [[0, 0, 0], [1, 1, 1], [2, 2, 2], [3, 3, 3]]
+[4;36mtest 0002:[0m [[0, 0, 0], [1, 1, 1], [3, 3, 3], [2, 2, 2]]
+[4;36mtest 0003:[0m [[0, 0, 0], [2, 2, 2], [1, 1, 1], [3, 3, 3]]
+[4;36mtest 0004:[0m [[0, 0, 0], [2, 2, 2], [3, 3, 3], [1, 1, 1]]
+[4;36mtest 0005:[0m [[0, 0, 0], [3, 3, 3], [1, 1, 1], [2, 2, 2]]
+[4;36mtest 0006:[0m [[0, 0, 0], [3, 3, 3], [2, 2, 2], [1, 1, 1]]
+[4;36mtest 0007:[0m [[1, 1, 1], [0, 0, 0], [2, 2, 2], [3, 3, 3]]
+[31m	[Error Found]: NO.1 assertion failed[0m
+[31m	The interleavings saved in out_token_ring_bad_1/Errors/000001_0000007_assertion-failed [0m
+[4;36mtest 0008:[0m [[1, 1, 1], [0, 0, 0], [3, 3, 3], [2, 2, 2]]
+[4;36mtest 0009:[0m [[1, 1, 1], [2, 2, 2], [0, 0, 0], [3, 3, 3]]
+[31m	[Error Found]: NO.2 assertion failed[0m
+[31m	The interleavings saved in out_token_ring_bad_1/Errors/000002_0000009_assertion-failed [0m
+[4;36mtest 0010:[0m [[1, 1, 1], [2, 2, 2], [3, 3, 3], [0, 0, 0]]
+[4;36mtest 0011:[0m [[1, 1, 1], [3, 3, 3], [0, 0, 0], [2, 2, 2]]
+[4;36mtest 0012:[0m [[1, 1, 1], [3, 3, 3], [2, 2, 2], [0, 0, 0]]
+[4;36mtest 0013:[0m [[2, 2, 2], [0, 0, 0], [1, 1, 1], [3, 3, 3]]
+[31m	[Error Found]: NO.3 assertion failed[0m
+[31m	The interleavings saved in out_token_ring_bad_1/Errors/000003_0000013_assertion-failed [0m
+[4;36mtest 0014:[0m [[2, 2, 2], [0, 0, 0], [3, 3, 3], [1, 1, 1]]
+[4;36mtest 0015:[0m [[2, 2, 2], [1, 1, 1], [0, 0, 0], [3, 3, 3]]
+[31m	[Error Found]: NO.4 assertion failed[0m
+[31m	The interleavings saved in out_token_ring_bad_1/Errors/000004_0000015_assertion-failed [0m
+[4;36mtest 0016:[0m [[2, 2, 2], [1, 1, 1], [3, 3, 3], [0, 0, 0]]
+[4;36mtest 0017:[0m [[2, 2, 2], [3, 3, 3], [0, 0, 0], [1, 1, 1]]
+[4;36mtest 0018:[0m [[2, 2, 2], [3, 3, 3], [1, 1, 1], [0, 0, 0]]
+[4;36mtest 0019:[0m [[3, 3, 3], [0, 0, 0], [1, 1, 1], [2, 2, 2]]
+[4;36mtest 0020:[0m [[3, 3, 3], [0, 0, 0], [2, 2, 2], [1, 1, 1]]
+[4;36mtest 0021:[0m [[3, 3, 3], [1, 1, 1], [0, 0, 0], [2, 2, 2]]
+[4;36mtest 0022:[0m [[3, 3, 3], [1, 1, 1], [2, 2, 2], [0, 0, 0]]
+[4;36mtest 0023:[0m [[3, 3, 3], [2, 2, 2], [0, 0, 0], [1, 1, 1]]
+[4;36mtest 0024:[0m [[3, 3, 3], [2, 2, 2], [1, 1, 1], [0, 0, 0]]
+Targeting bugs that bug depth = 4 . Iterate for 5 periods
+Targeting bugs that bug depth = 5 . Iterate for 6 periods
+[4;36mEnd Testing!
+[0m
+[1;35m
+Total Error Interleavings: 4
+Total Timeouts Interleavings: 0
+2 status found:
+	 [0, -6]
+0 results found:
+--------------------------------------------------
+	Last New Find		Total
+Round	0			24
+Time	00:00:00.00000		00:00:00.77935
+[0m

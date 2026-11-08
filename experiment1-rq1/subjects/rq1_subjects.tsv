@@ -1,0 +1,9 @@
+subject	rel_dir	bin	depth	notes
+CS_account	evaluation/CS/account	account_bad	3	RQ1 curated 2026-11-02
+CS_lazy01	evaluation/CS/lazy01	lazy01_bad	3	RQ1 curated 2026-11-02
+CS_reorder_3	evaluation/CS/reorder_3	reorder_3_bad	3	paper: Period schedules=27; curated 2026-11-02
+CS_twostage	evaluation/CS/twostage	twostage_bad	3	RQ1 expand 2026-11-07
+CS_reorder_4	evaluation/CS/reorder_4	reorder_4_bad	3	RQ1 expand 2026-11-07
+CS_bluetooth_driver	evaluation/CS/bluetooth_driver	bluetooth_driver_bad	3	RQ1 expand 2026-11-07
+CS_wronglock_3	evaluation/CS/wronglock_3	wronglock_3_bad	3	RQ1 expand 2026-11-07
+CS_token_ring	evaluation/CS/token_ring	token_ring_bad	3	RQ1 expand 2026-11-07

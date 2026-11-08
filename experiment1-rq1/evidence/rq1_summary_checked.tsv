@@ -1,0 +1,17 @@
+subject	mode	depth	budget	errors	reported_schedules	log_schedules	first_bug_sched	duration_s	status	notes
+CS_account	Period	3	10000	29	65	65	3	2.459	BUGS_OK	log count matches
+CS_account	Serial	3	10000	14	36	36	4	1.357	BUGS_OK	log count matches
+CS_lazy01	Period	3	10000	13	39	39	3	1.079	BUGS_OK	log count matches
+CS_lazy01	Serial	3	10000	8	24	24	4	0.983	BUGS_OK	log count matches
+CS_reorder_3	Period	3	10000	6	27	27	6	0.736	BUGS_OK	log count matches
+CS_reorder_3	Serial	3	10000	4	18	18	10	0.548	BUGS_OK	Serial long-period coverage needs calibration
+CS_twostage	Period	3	10000	2	33	33	4	0.770	BUGS_OK	log count matches
+CS_twostage	Serial	3	10000	2	33	33	4	1.181	BUGS_OK	log count matches
+CS_reorder_4	Period	3	10000	12	100	100	9	3.282	BUGS_OK	log count matches
+CS_reorder_4	Serial	3	10000	0	24	24	NA	0.750	OK	Serial long-period coverage needs calibration
+CS_bluetooth_driver	Period	3	10000	7	47	205	9	4.358	BUGS_OK	old parser missed for-prefix schedules
+CS_bluetooth_driver	Serial	3	10000	7	47	205	9	5.638	BUGS_OK	old parser missed for-prefix schedules
+CS_wronglock_3	Period	3	10000	44	172	172	6	4.033	BUGS_OK	log count matches
+CS_wronglock_3	Serial	3	10000	0	24	24	NA	0.345	OK	Serial long-period coverage needs calibration
+CS_token_ring	Period	3	10000	48	232	232	2	3.834	BUGS_OK	log count matches
+CS_token_ring	Serial	3	10000	4	24	24	7	0.878	BUGS_OK	Serial long-period coverage needs calibration
