@@ -640,9 +640,10 @@ period_limit = bugDepth + N_after_DryRun - 1
 print("[Serial] N=", N_after_DryRun, "bugDepth=", bugDepth, "period_limit=", period_limit)
 
 for iterPeriod in range(max(2, N_after_DryRun), period_limit+1):
+    serial_bug_depth = iterPeriod - N_after_DryRun + 1
 
     # Iterative Period Bounding
-    if VarModeFlag == 0 or iterPeriod == 2:
+    if VarModeFlag == 0 or serial_bug_depth < 2:
 
         MList = []
         for i in range(0, N_after_DryRun + zero_in_KP):
@@ -675,7 +676,7 @@ for iterPeriod in range(max(2, N_after_DryRun), period_limit+1):
     parentArray = parentArrayCopy # restore parentArray
     waited_to_explore = waited_to_explore_save # restore waited_to_explore in every exploration of different bug depth
     memmove(ADDR + sizeof(c_ulonglong) + sizeof(c_uint)*2, byref(c_uint(iterPeriod-1)), sizeof(c_uint)) # tell the program how many periods we used. The program can yield those unrealted thread to the last period
-    print("Targeting bugs that bug depth =", iterPeriod-1, ". Iterate for", iterPeriod, "periods")
+    print("Targeting bugs that bug depth =", serial_bug_depth, ". Iterate for", iterPeriod, "periods")
 
     reach_runs_limit = 0
     while True:
@@ -687,7 +688,7 @@ for iterPeriod in range(max(2, N_after_DryRun), period_limit+1):
 
             for inter in scheduler:
 
-                if DBDS_stage == 1 and iterPeriod-1 >= 4 and full_deep_run == 0: # for deep bug, explore interesting prefix is enough
+                if DBDS_stage == 1 and serial_bug_depth >= 4 and full_deep_run == 0: # for deep bug, explore interesting prefix is enough
                     break
 
                 # Filtering redundant scheduling
@@ -707,7 +708,7 @@ for iterPeriod in range(max(2, N_after_DryRun), period_limit+1):
                     reach_runs_limit = 1
                     break
 
-                if VarModeFlag == 0 or iterPeriod == 2:
+                if VarModeFlag == 0 or serial_bug_depth < 2:
                     # for each interleaving, get the yield pattern
                     pattern = scheduler.get_yield_pattern()
                     # print inter into screen
@@ -825,7 +826,7 @@ for iterPeriod in range(max(2, N_after_DryRun), period_limit+1):
 
         # if cannot find next interleaving
         if DBDS_stage == 1:
-            if VarModeFlag == 0 or iterPeriod == 2:
+            if VarModeFlag == 0 or serial_bug_depth < 2:
                 waited_to_explore_save = copy.deepcopy(waited_to_explore)
                 DBDS_stage = 2
             else:
@@ -846,7 +847,7 @@ for iterPeriod in range(max(2, N_after_DryRun), period_limit+1):
 
         if DBDS_stage == 2:
 
-            if (iterPeriod == 2): # bug depth <= 1 no need to use prefix
+            if (serial_bug_depth < 2): # bug depth <= 1 no need to use prefix
                 DBDS_stage = 1
                 break
 

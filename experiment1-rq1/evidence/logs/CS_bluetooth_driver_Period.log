@@ -26,13 +26,13 @@ int
 [*] Analyze Sensitive Memory Operations
 [*] Update Memory Group with Sensitive Memory Operations
 [*] Dumps mempairs and save it into .npz file
--rw-r--r-- 1 root root  286 Nov  7 10:27 ConConfig.bluetooth_driver_bad
--rw-r--r-- 1 root root 8.5K Nov  7 10:27 bluetooth_driver_bad.bc
+-rw-r--r-- 1 root root  286 Nov 15 15:06 ConConfig.bluetooth_driver_bad
+-rw-r--r-- 1 root root 8.5K Nov 15 15:06 bluetooth_driver_bad.bc
 -rw-rw-r-- 1 root root 1.5K Jan 16  2022 bluetooth_driver_bad.c
--rw-r--r-- 1 root root  966 Nov  7 10:27 mempair.bluetooth_driver_bad
--rw-r--r-- 1 root root  14K Nov  7 10:27 mempair.bluetooth_driver_bad.npz
--rw-r--r-- 1 root root 1.9K Nov  7 10:27 mssa.bluetooth_driver_bad
--rw-r--r-- 1 root root 3.2K Nov  7 10:27 so.bluetooth_driver_bad
+-rw-r--r-- 1 root root  966 Nov 15 15:06 mempair.bluetooth_driver_bad
+-rw-r--r-- 1 root root  14K Nov 15 15:06 mempair.bluetooth_driver_bad.npz
+-rw-r--r-- 1 root root 1.9K Nov 15 15:06 mssa.bluetooth_driver_bad
+-rw-r--r-- 1 root root 3.2K Nov 15 15:06 so.bluetooth_driver_bad
 /workdir/PERIOD/evaluation/CS/bluetooth_driver
 + export Con_PATH=/workdir/PERIOD/evaluation/CS/bluetooth_driver/ConConfig.bluetooth_driver_bad
 + Con_PATH=/workdir/PERIOD/evaluation/CS/bluetooth_driver/ConConfig.bluetooth_driver_bad
@@ -60,10 +60,9 @@ runs_limit: 10000
 [4;36mPerform Dry Run![0m
 
 [4;36mPerform DBDS Run with default system scheduling![0m
-sudo: unable to resolve host 029ab9e440fc: Resource temporarily unavailable
 
 --------------------------------------
-Runtime: 4530
+Runtime: 5530
 ThreadNum:  2
 MaxKpNum:  7
 TupleScheduling: 0
@@ -309,5 +308,5 @@ Total Timeouts Interleavings: 0
 --------------------------------------------------
 	Last New Find		Total
 Round	0			205
-Time	00:00:00.00000		00:00:04.24743
+Time	00:00:00.00000		00:00:08.63296
 [0m

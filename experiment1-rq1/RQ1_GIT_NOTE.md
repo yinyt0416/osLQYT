@@ -9,8 +9,9 @@
 
 - `scripts/`：RQ1 运行脚本及 Serial 调度器
 - `subjects/rq1_subjects.tsv`：8 个已运行实验对象及参数
-- `evidence/rq1_summary_reported.tsv`：本次已有结果汇总
-- `evidence/logs/`：16 份 Period / Serial 原始运行日志
+- `evidence/rq1_summary_reported.tsv`：修复后单次重跑的结果汇总
+- `evidence/rq1_summary_checked.tsv`：汇总值与日志计数的核对表
+- `evidence/logs/`：16 份修复后单次重跑的 Period / Serial 原始运行日志
 
 ## 运行方法
 
@@ -31,9 +32,14 @@ bash run_queue.sh rq1
 
 ## 当前说明
 
-已运行 8 个实验对象，每个对象包含 Period 和 Serial 两种模式。现有结果属于初步复现证据，原始数字以 `evidence/logs/` 为准。
+已修正两处运行脚本问题：
 
-核查发现，带 `for prefix` 的调度行会被旧汇总脚本漏计；`CS_bluetooth_driver` 两种模式的原表为 47，日志实际均为 205。Serial 的长周期搜索范围也需要继续校准，因此本次结果不作为最终论文结论。
+1. Serial 现在按 `iterPeriod - N + 1` 计算相对 bug depth，不再把 N=4、depth=3 的第 5、6 周期错误跳过。纯生成器回归中，`reorder_3` 固定切片为 30 个候选，`reorder_4` 为 384 个候选。
+2. 汇总脚本现在同时统计 `test NNNN:` 和 `test NNNN for prefix ...:`，`CS_bluetooth_driver` 两种模式的日志和汇总均为 205。
+
+2026-11-15 已在 Docker Desktop 4.99.0、Linux/WSL2 容器环境中完成一次修复后重跑，16 项均正常结束。关键回归结果为：`CS_reorder_3` Serial=30、`CS_reorder_4` Serial=384、`CS_bluetooth_driver` Period/Serial=205。两份汇总均已按新日志更新并核对一致。
+
+本轮只完成一次运行，尚未满足课程“至少 3 次独立运行、均值 ± 标准差”的最终统计要求，因此仍作为阶段性证据，不作为最终论文结论。
 
 ## 代码来源
 

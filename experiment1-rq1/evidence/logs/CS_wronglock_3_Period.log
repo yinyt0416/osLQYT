@@ -12,12 +12,12 @@ Everything's fine!
 [*] Analyze Sensitive Memory Operations
 [*] Update Memory Group with Sensitive Memory Operations
 [*] Dumps mempairs and save it into .npz file
--rw-r--r-- 1 root root   95 Nov  7 10:27 ConConfig.wronglock_3_bad
--rw-r--r-- 1 root root  431 Nov  7 10:27 mempair.wronglock_3_bad
--rw-r--r-- 1 root root 6.0K Nov  7 10:27 mempair.wronglock_3_bad.npz
--rw-r--r-- 1 root root 3.0K Nov  7 10:27 mssa.wronglock_3_bad
--rw-r--r-- 1 root root 2.6K Nov  7 10:27 so.wronglock_3_bad
--rw-r--r-- 1 root root  12K Nov  7 10:27 wronglock_3_bad.bc
+-rw-r--r-- 1 root root   95 Nov 15 15:06 ConConfig.wronglock_3_bad
+-rw-r--r-- 1 root root  431 Nov 15 15:06 mempair.wronglock_3_bad
+-rw-r--r-- 1 root root 6.0K Nov 15 15:06 mempair.wronglock_3_bad.npz
+-rw-r--r-- 1 root root 3.0K Nov 15 15:06 mssa.wronglock_3_bad
+-rw-r--r-- 1 root root 2.6K Nov 15 15:06 so.wronglock_3_bad
+-rw-r--r-- 1 root root  12K Nov 15 15:06 wronglock_3_bad.bc
 -rw-rw-r-- 1 root root  59K Jan 16  2022 wronglock_3_bad.c
 /workdir/PERIOD/evaluation/CS/wronglock_3
 + export Con_PATH=/workdir/PERIOD/evaluation/CS/wronglock_3/ConConfig.wronglock_3_bad
@@ -40,10 +40,9 @@ runs_limit: 10000
 [4;36mPerform Dry Run![0m
 
 [4;36mPerform DBDS Run with default system scheduling![0m
-sudo: unable to resolve host 029ab9e440fc: Resource temporarily unavailable
 
 --------------------------------------
-Runtime: 3480
+Runtime: 7170
 ThreadNum:  4
 MaxKpNum:  4
 TupleScheduling: 0
@@ -118,24 +117,22 @@ Targeting bugs that bug depth = 3 . Iterate for 4 periods
 [4;36mtest 0042:[0m [[0, 0], [2], [0, 0], [1, 1, 2, 3, 3]]
 [4;36mtest 0043:[0m [[0, 0, 0], [2], [0], [1, 1, 2, 3, 3]]
 [4;36mtest 0044:[0m [[2], [0], [2], [0, 0, 0, 1, 1, 3, 3]]
-[31m	[Error Found]: NO.9 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000009_0000044_assertion-failed [0m
 [4;36mtest 0045:[0m [[2], [0, 0], [2], [0, 0, 1, 1, 3, 3]]
-[31m	[Error Found]: NO.10 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000010_0000045_assertion-failed [0m
+[31m	[Error Found]: NO.9 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000009_0000045_assertion-failed [0m
 [4;36mtest 0046:[0m [[2], [0, 0, 0], [2], [0, 1, 1, 3, 3]]
-[31m	[Error Found]: NO.11 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000011_0000046_assertion-failed [0m
+[31m	[Error Found]: NO.10 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000010_0000046_assertion-failed [0m
 [4;36mtest 0047:[0m [[0], [3], [0, 0, 0], [1, 1, 2, 2, 3]]
 [4;36mtest 0048:[0m [[0, 0], [3], [0, 0], [1, 1, 2, 2, 3]]
 [4;36mtest 0049:[0m [[0, 0, 0], [3], [0], [1, 1, 2, 2, 3]]
 [4;36mtest 0050:[0m [[3], [0], [3], [0, 0, 0, 1, 1, 2, 2]]
 [4;36mtest 0051:[0m [[3], [0, 0], [3], [0, 0, 1, 1, 2, 2]]
-[31m	[Error Found]: NO.12 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000012_0000051_assertion-failed [0m
+[31m	[Error Found]: NO.11 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000011_0000051_assertion-failed [0m
 [4;36mtest 0052:[0m [[3], [0, 0, 0], [3], [0, 1, 1, 2, 2]]
-[31m	[Error Found]: NO.13 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000013_0000052_assertion-failed [0m
+[31m	[Error Found]: NO.12 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000012_0000052_assertion-failed [0m
 [4;36mtest 0053:[0m [[1], [2], [1], [0, 0, 0, 0, 2, 3, 3]]
 [4;36mtest 0054:[0m [[2], [1], [2], [0, 0, 0, 0, 1, 3, 3]]
 [4;36mtest 0055:[0m [[1], [3], [1], [0, 0, 0, 0, 2, 2, 3]]
@@ -144,101 +141,99 @@ Targeting bugs that bug depth = 3 . Iterate for 4 periods
 [4;36mtest 0058:[0m [[3], [2], [3], [0, 0, 0, 0, 1, 1, 2]]
 [4;36mtest 0059:[0m [[0], [1, 1], [0, 0, 0], [2, 2, 3, 3]]
 [4;36mtest 0060:[0m [[0, 0], [1, 1], [0, 0], [2, 2, 3, 3]]
-[31m	[Error Found]: NO.14 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000014_0000060_assertion-failed [0m
+[31m	[Error Found]: NO.13 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000013_0000060_assertion-failed [0m
 [4;36mtest 0061:[0m [[0, 0, 0], [1, 1], [0], [2, 2, 3, 3]]
-[31m	[Error Found]: NO.15 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000015_0000061_assertion-failed [0m
+[31m	[Error Found]: NO.14 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000014_0000061_assertion-failed [0m
 [4;36mtest 0062:[0m [[0], [1, 1], [2, 2], [0, 0, 0, 3, 3]]
 [4;36mtest 0063:[0m [[0, 0], [1, 1], [2, 2], [0, 0, 3, 3]]
-[31m	[Error Found]: NO.16 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000016_0000063_assertion-failed [0m
+[31m	[Error Found]: NO.15 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000015_0000063_assertion-failed [0m
 [4;36mtest 0064:[0m [[0, 0, 0], [1, 1], [2, 2], [0, 3, 3]]
-[31m	[Error Found]: NO.17 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000017_0000064_assertion-failed [0m
+[31m	[Error Found]: NO.16 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000016_0000064_assertion-failed [0m
 [4;36mtest 0065:[0m [[0, 0, 0, 0], [1], [2, 2], [1, 3, 3]]
 [4;36mtest 0066:[0m [[0], [2, 2], [0, 0, 0], [1, 1, 3, 3]]
 [4;36mtest 0067:[0m [[0, 0], [2, 2], [0, 0], [1, 1, 3, 3]]
-[31m	[Error Found]: NO.18 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000018_0000067_assertion-failed [0m
+[31m	[Error Found]: NO.17 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000017_0000067_assertion-failed [0m
 [4;36mtest 0068:[0m [[0, 0, 0], [2, 2], [0], [1, 1, 3, 3]]
-[31m	[Error Found]: NO.19 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000019_0000068_assertion-failed [0m
+[31m	[Error Found]: NO.18 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000018_0000068_assertion-failed [0m
 [4;36mtest 0069:[0m [[0], [2, 2], [1, 1], [0, 0, 0, 3, 3]]
 [4;36mtest 0070:[0m [[0, 0], [2, 2], [1, 1], [0, 0, 3, 3]]
-[31m	[Error Found]: NO.20 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000020_0000070_assertion-failed [0m
+[31m	[Error Found]: NO.19 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000019_0000070_assertion-failed [0m
 [4;36mtest 0071:[0m [[0, 0, 0], [2, 2], [1, 1], [0, 3, 3]]
-[31m	[Error Found]: NO.21 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000021_0000071_assertion-failed [0m
+[31m	[Error Found]: NO.20 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000020_0000071_assertion-failed [0m
 [4;36mtest 0072:[0m [[0, 0, 0, 0], [2], [1, 1], [2, 3, 3]]
 [4;36mtest 0073:[0m [[1], [0, 0, 0, 0], [1], [2, 2, 3, 3]]
 [4;36mtest 0074:[0m [[1, 1], [0], [2, 2], [0, 0, 0, 3, 3]]
 [4;36mtest 0075:[0m [[1, 1], [0, 0], [2, 2], [0, 0, 3, 3]]
-[31m	[Error Found]: NO.22 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000022_0000075_assertion-failed [0m
+[31m	[Error Found]: NO.21 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000021_0000075_assertion-failed [0m
 [4;36mtest 0076:[0m [[1, 1], [0, 0, 0], [2, 2], [0, 3, 3]]
-[31m	[Error Found]: NO.23 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000023_0000076_assertion-failed [0m
+[31m	[Error Found]: NO.22 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000022_0000076_assertion-failed [0m
 [4;36mtest 0077:[0m [[1], [0, 0, 0, 0], [2, 2], [1, 3, 3]]
 [4;36mtest 0078:[0m [[1], [2, 2], [0, 0, 0, 0], [1, 3, 3]]
 [4;36mtest 0079:[0m [[1, 1], [2], [0, 0, 0, 0], [2, 3, 3]]
 [4;36mtest 0080:[0m [[1], [2, 2], [1], [0, 0, 0, 0, 3, 3]]
 [4;36mtest 0081:[0m [[2, 2], [0], [1, 1], [0, 0, 0, 3, 3]]
 [4;36mtest 0082:[0m [[2, 2], [0, 0], [1, 1], [0, 0, 3, 3]]
-[31m	[Error Found]: NO.24 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000024_0000082_assertion-failed [0m
+[31m	[Error Found]: NO.23 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000023_0000082_assertion-failed [0m
 [4;36mtest 0083:[0m [[2, 2], [0, 0, 0], [1, 1], [0, 3, 3]]
-[31m	[Error Found]: NO.25 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000025_0000083_assertion-failed [0m
+[31m	[Error Found]: NO.24 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000024_0000083_assertion-failed [0m
 [4;36mtest 0084:[0m [[2], [0, 0, 0, 0], [1, 1], [2, 3, 3]]
 [4;36mtest 0085:[0m [[2], [0, 0, 0, 0], [2], [1, 1, 3, 3]]
 [4;36mtest 0086:[0m [[2, 2], [1], [0, 0, 0, 0], [1, 3, 3]]
 [4;36mtest 0087:[0m [[2], [1, 1], [0, 0, 0, 0], [2, 3, 3]]
 [4;36mtest 0088:[0m [[2], [1, 1], [2], [0, 0, 0, 0, 3, 3]]
 [4;36mtest 0089:[0m [[0], [1, 1], [3, 3], [0, 0, 0, 2, 2]]
-[31m	[Error Found]: NO.26 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000026_0000089_assertion-failed [0m
 [4;36mtest 0090:[0m [[0, 0], [1, 1], [3, 3], [0, 0, 2, 2]]
-[31m	[Error Found]: NO.27 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000027_0000090_assertion-failed [0m
+[31m	[Error Found]: NO.25 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000025_0000090_assertion-failed [0m
 [4;36mtest 0091:[0m [[0, 0, 0], [1, 1], [3, 3], [0, 2, 2]]
-[31m	[Error Found]: NO.28 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000028_0000091_assertion-failed [0m
+[31m	[Error Found]: NO.26 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000026_0000091_assertion-failed [0m
 [4;36mtest 0092:[0m [[0, 0, 0, 0], [1], [3, 3], [1, 2, 2]]
 [4;36mtest 0093:[0m [[0], [3, 3], [0, 0, 0], [1, 1, 2, 2]]
 [4;36mtest 0094:[0m [[0, 0], [3, 3], [0, 0], [1, 1, 2, 2]]
-[31m	[Error Found]: NO.29 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000029_0000094_assertion-failed [0m
+[31m	[Error Found]: NO.27 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000027_0000094_assertion-failed [0m
 [4;36mtest 0095:[0m [[0, 0, 0], [3, 3], [0], [1, 1, 2, 2]]
-[31m	[Error Found]: NO.30 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000030_0000095_assertion-failed [0m
+[31m	[Error Found]: NO.28 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000028_0000095_assertion-failed [0m
 [4;36mtest 0096:[0m [[0], [3, 3], [1, 1], [0, 0, 0, 2, 2]]
 [4;36mtest 0097:[0m [[0, 0], [3, 3], [1, 1], [0, 0, 2, 2]]
-[31m	[Error Found]: NO.31 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000031_0000097_assertion-failed [0m
+[31m	[Error Found]: NO.29 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000029_0000097_assertion-failed [0m
 [4;36mtest 0098:[0m [[0, 0, 0], [3, 3], [1, 1], [0, 2, 2]]
-[31m	[Error Found]: NO.32 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000032_0000098_assertion-failed [0m
+[31m	[Error Found]: NO.30 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000030_0000098_assertion-failed [0m
 [4;36mtest 0099:[0m [[0, 0, 0, 0], [3], [1, 1], [2, 2, 3]]
 [4;36mtest 0100:[0m [[1, 1], [0], [3, 3], [0, 0, 0, 2, 2]]
 [4;36mtest 0101:[0m [[1, 1], [0, 0], [3, 3], [0, 0, 2, 2]]
-[31m	[Error Found]: NO.33 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000033_0000101_assertion-failed [0m
+[31m	[Error Found]: NO.31 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000031_0000101_assertion-failed [0m
 [4;36mtest 0102:[0m [[1, 1], [0, 0, 0], [3, 3], [0, 2, 2]]
-[31m	[Error Found]: NO.34 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000034_0000102_assertion-failed [0m
+[31m	[Error Found]: NO.32 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000032_0000102_assertion-failed [0m
 [4;36mtest 0103:[0m [[1], [0, 0, 0, 0], [3, 3], [1, 2, 2]]
 [4;36mtest 0104:[0m [[1], [3, 3], [0, 0, 0, 0], [1, 2, 2]]
 [4;36mtest 0105:[0m [[1, 1], [3], [0, 0, 0, 0], [2, 2, 3]]
 [4;36mtest 0106:[0m [[1], [3, 3], [1], [0, 0, 0, 0, 2, 2]]
 [4;36mtest 0107:[0m [[3, 3], [0], [1, 1], [0, 0, 0, 2, 2]]
 [4;36mtest 0108:[0m [[3, 3], [0, 0], [1, 1], [0, 0, 2, 2]]
-[31m	[Error Found]: NO.35 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000035_0000108_assertion-failed [0m
+[31m	[Error Found]: NO.33 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000033_0000108_assertion-failed [0m
 [4;36mtest 0109:[0m [[3, 3], [0, 0, 0], [1, 1], [0, 2, 2]]
-[31m	[Error Found]: NO.36 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000036_0000109_assertion-failed [0m
+[31m	[Error Found]: NO.34 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000034_0000109_assertion-failed [0m
 [4;36mtest 0110:[0m [[3], [0, 0, 0, 0], [1, 1], [2, 2, 3]]
 [4;36mtest 0111:[0m [[3], [0, 0, 0, 0], [3], [1, 1, 2, 2]]
 [4;36mtest 0112:[0m [[3, 3], [1], [0, 0, 0, 0], [1, 2, 2]]
@@ -246,38 +241,38 @@ Targeting bugs that bug depth = 3 . Iterate for 4 periods
 [4;36mtest 0114:[0m [[3], [1, 1], [3], [0, 0, 0, 0, 2, 2]]
 [4;36mtest 0115:[0m [[0], [2, 2], [3, 3], [0, 0, 0, 1, 1]]
 [4;36mtest 0116:[0m [[0, 0], [2, 2], [3, 3], [0, 0, 1, 1]]
-[31m	[Error Found]: NO.37 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000037_0000116_assertion-failed [0m
+[31m	[Error Found]: NO.35 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000035_0000116_assertion-failed [0m
 [4;36mtest 0117:[0m [[0, 0, 0], [2, 2], [3, 3], [0, 1, 1]]
-[31m	[Error Found]: NO.38 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000038_0000117_assertion-failed [0m
+[31m	[Error Found]: NO.36 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000036_0000117_assertion-failed [0m
 [4;36mtest 0118:[0m [[0, 0, 0, 0], [2], [3, 3], [1, 1, 2]]
 [4;36mtest 0119:[0m [[0], [3, 3], [2, 2], [0, 0, 0, 1, 1]]
 [4;36mtest 0120:[0m [[0, 0], [3, 3], [2, 2], [0, 0, 1, 1]]
-[31m	[Error Found]: NO.39 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000039_0000120_assertion-failed [0m
+[31m	[Error Found]: NO.37 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000037_0000120_assertion-failed [0m
 [4;36mtest 0121:[0m [[0, 0, 0], [3, 3], [2, 2], [0, 1, 1]]
-[31m	[Error Found]: NO.40 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000040_0000121_assertion-failed [0m
+[31m	[Error Found]: NO.38 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000038_0000121_assertion-failed [0m
 [4;36mtest 0122:[0m [[0, 0, 0, 0], [3], [2, 2], [1, 1, 3]]
 [4;36mtest 0123:[0m [[2, 2], [0], [3, 3], [0, 0, 0, 1, 1]]
 [4;36mtest 0124:[0m [[2, 2], [0, 0], [3, 3], [0, 0, 1, 1]]
-[31m	[Error Found]: NO.41 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000041_0000124_assertion-failed [0m
+[31m	[Error Found]: NO.39 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000039_0000124_assertion-failed [0m
 [4;36mtest 0125:[0m [[2, 2], [0, 0, 0], [3, 3], [0, 1, 1]]
-[31m	[Error Found]: NO.42 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000042_0000125_assertion-failed [0m
+[31m	[Error Found]: NO.40 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000040_0000125_assertion-failed [0m
 [4;36mtest 0126:[0m [[2], [0, 0, 0, 0], [3, 3], [1, 1, 2]]
 [4;36mtest 0127:[0m [[2], [3, 3], [0, 0, 0, 0], [1, 1, 2]]
 [4;36mtest 0128:[0m [[2, 2], [3], [0, 0, 0, 0], [1, 1, 3]]
 [4;36mtest 0129:[0m [[2], [3, 3], [2], [0, 0, 0, 0, 1, 1]]
 [4;36mtest 0130:[0m [[3, 3], [0], [2, 2], [0, 0, 0, 1, 1]]
 [4;36mtest 0131:[0m [[3, 3], [0, 0], [2, 2], [0, 0, 1, 1]]
-[31m	[Error Found]: NO.43 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000043_0000131_assertion-failed [0m
+[31m	[Error Found]: NO.41 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000041_0000131_assertion-failed [0m
 [4;36mtest 0132:[0m [[3, 3], [0, 0, 0], [2, 2], [0, 1, 1]]
-[31m	[Error Found]: NO.44 assertion failed[0m
-[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000044_0000132_assertion-failed [0m
+[31m	[Error Found]: NO.42 assertion failed[0m
+[31m	The interleavings saved in out_wronglock_3_bad_1/Errors/000042_0000132_assertion-failed [0m
 [4;36mtest 0133:[0m [[3], [0, 0, 0, 0], [2, 2], [1, 1, 3]]
 [4;36mtest 0134:[0m [[3, 3], [2], [0, 0, 0, 0], [1, 1, 2]]
 [4;36mtest 0135:[0m [[3], [2, 2], [0, 0, 0, 0], [1, 1, 3]]
@@ -321,7 +316,7 @@ Targeting bugs that bug depth = 3 . Iterate for 4 periods
 [4;36mEnd Testing!
 [0m
 [1;35m
-Total Error Interleavings: 44
+Total Error Interleavings: 42
 Total Timeouts Interleavings: 0
 2 status found:
 	 [0, -6]
@@ -329,5 +324,5 @@ Total Timeouts Interleavings: 0
 --------------------------------------------------
 	Last New Find		Total
 Round	0			172
-Time	00:00:00.00000		00:00:03.93767
+Time	00:00:00.00000		00:00:28.75327
 [0m

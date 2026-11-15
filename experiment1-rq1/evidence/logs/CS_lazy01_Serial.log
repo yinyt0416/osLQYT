@@ -22,13 +22,13 @@ Everything's fine!
 [*] Analyze Sensitive Memory Operations
 [*] Update Memory Group with Sensitive Memory Operations
 [*] Dumps mempairs and save it into .npz file
--rw-r--r-- 1 root root   95 Nov  2 06:30 ConConfig.lazy01_bad
--rw-r--r-- 1 root root 7.1K Nov  2 06:30 lazy01_bad.bc
+-rw-r--r-- 1 root root   95 Nov 15 15:04 ConConfig.lazy01_bad
+-rw-r--r-- 1 root root 7.1K Nov 15 15:04 lazy01_bad.bc
 -rw-rw-r-- 1 root root  702 Jan 16  2022 lazy01_bad.c
--rw-r--r-- 1 root root  552 Nov  2 06:30 mempair.lazy01_bad
--rw-r--r-- 1 root root 6.5K Nov  2 06:30 mempair.lazy01_bad.npz
--rw-r--r-- 1 root root  841 Nov  2 06:30 mssa.lazy01_bad
--rw-r--r-- 1 root root  776 Nov  2 06:30 so.lazy01_bad
+-rw-r--r-- 1 root root  552 Nov 15 15:04 mempair.lazy01_bad
+-rw-r--r-- 1 root root 6.5K Nov 15 15:04 mempair.lazy01_bad.npz
+-rw-r--r-- 1 root root  841 Nov 15 15:04 mssa.lazy01_bad
+-rw-r--r-- 1 root root  776 Nov 15 15:04 so.lazy01_bad
 /workdir/PERIOD/evaluation/CS/lazy01
 + export Con_PATH=/workdir/PERIOD/evaluation/CS/lazy01/ConConfig.lazy01_bad
 + Con_PATH=/workdir/PERIOD/evaluation/CS/lazy01/ConConfig.lazy01_bad
@@ -51,10 +51,9 @@ runs_limit: 10000
 [4;36mPerform Dry Run![0m
 
 [4;36mPerform DBDS Run with default system scheduling![0m
-sudo: unable to resolve host 9565ce7bb377: Resource temporarily unavailable
 
 --------------------------------------
-Runtime: 9120
+Runtime: 5970
 ThreadNum:  3
 MaxKpNum:  2
 TupleScheduling: 0
@@ -67,7 +66,7 @@ Consider all variables
 
 [4;36mStart Testing![0m
 [Serial] N= 3 bugDepth= 3 period_limit= 5
-Targeting bugs that bug depth = 2 . Iterate for 3 periods
+Targeting bugs that bug depth = 1 . Iterate for 3 periods
 [4;36mtest 0001:[0m [[0, 0], [1, 1], [2, 2]]
 [4;36mtest 0002:[0m [[0, 0], [2, 2], [1, 1]]
 [4;36mtest 0003:[0m [[1, 1], [0, 0], [2, 2]]
@@ -78,7 +77,7 @@ Targeting bugs that bug depth = 2 . Iterate for 3 periods
 [4;36mtest 0006:[0m [[2, 2], [1, 1], [0, 0]]
 [31m	[Error Found]: NO.2 assertion failed[0m
 [31m	The interleavings saved in out_lazy01_bad_1/Errors/000002_0000006_assertion-failed [0m
-Targeting bugs that bug depth = 3 . Iterate for 4 periods
+Targeting bugs that bug depth = 2 . Iterate for 4 periods
 [4;36mtest 0007:[0m [[0], [1, 1], [0], [2, 2]]
 [4;36mtest 0008:[0m [[0], [1, 1], [2, 2], [0]]
 [4;36mtest 0009:[0m [[0, 0], [1], [2, 2], [1]]
@@ -109,17 +108,77 @@ Targeting bugs that bug depth = 3 . Iterate for 4 periods
 [4;36mtest 0024:[0m [[2], [1, 1], [2], [0, 0]]
 [31m	[Error Found]: NO.8 assertion failed[0m
 [31m	The interleavings saved in out_lazy01_bad_1/Errors/000008_0000024_assertion-failed [0m
-Targeting bugs that bug depth = 4 . Iterate for 5 periods
+Targeting bugs that bug depth = 3 . Iterate for 5 periods
+[4;36mtest 0025:[0m [[0], [1], [0], [1], [2, 2]]
+[4;36mtest 0026:[0m [[0], [1], [0], [2, 2], [1]]
+[4;36mtest 0027:[0m [[0], [1], [2, 2], [0], [1]]
+[4;36mtest 0028:[0m [[0], [1, 1], [2], [0], [2]]
+[4;36mtest 0029:[0m [[0], [1], [2, 2], [1], [0]]
+[4;36mtest 0030:[0m [[0, 0], [1], [2], [1], [2]]
+[4;36mtest 0031:[0m [[0], [2], [0], [1, 1], [2]]
+[4;36mtest 0032:[0m [[0], [2], [0], [2], [1, 1]]
+[4;36mtest 0033:[0m [[0], [2, 2], [1], [0], [1]]
+[4;36mtest 0034:[0m [[0], [2], [1, 1], [0], [2]]
+[4;36mtest 0035:[0m [[0], [2], [1, 1], [2], [0]]
+[4;36mtest 0036:[0m [[0, 0], [2], [1], [2], [1]]
+[4;36mtest 0037:[0m [[1], [0], [1], [0], [2, 2]]
+[4;36mtest 0038:[0m [[1], [0], [1], [2, 2], [0]]
+[4;36mtest 0039:[0m [[1], [0], [2, 2], [0], [1]]
+[4;36mtest 0040:[0m [[1, 1], [0], [2], [0], [2]]
+[4;36mtest 0041:[0m [[1], [0], [2, 2], [1], [0]]
+[4;36mtest 0042:[0m [[1], [0, 0], [2], [1], [2]]
+[4;36mtest 0043:[0m [[1], [2, 2], [0], [1], [0]]
+[31m	[Error Found]: NO.9 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000009_0000043_assertion-failed [0m
+[4;36mtest 0044:[0m [[1], [2], [0, 0], [1], [2]]
+[31m	[Error Found]: NO.10 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000010_0000044_assertion-failed [0m
+[4;36mtest 0045:[0m [[1, 1], [2], [0], [2], [0]]
+[31m	[Error Found]: NO.11 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000011_0000045_assertion-failed [0m
+[4;36mtest 0046:[0m [[1], [2], [0, 0], [2], [1]]
+[31m	[Error Found]: NO.12 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000012_0000046_assertion-failed [0m
+[4;36mtest 0047:[0m [[1], [2], [1], [0, 0], [2]]
+[31m	[Error Found]: NO.13 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000013_0000047_assertion-failed [0m
+[4;36mtest 0048:[0m [[1], [2], [1], [2], [0, 0]]
+[31m	[Error Found]: NO.14 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000014_0000048_assertion-failed [0m
+[4;36mtest 0049:[0m [[2, 2], [0], [1], [0], [1]]
+[4;36mtest 0050:[0m [[2], [0], [1, 1], [0], [2]]
+[4;36mtest 0051:[0m [[2], [0], [1, 1], [2], [0]]
+[4;36mtest 0052:[0m [[2], [0, 0], [1], [2], [1]]
+[4;36mtest 0053:[0m [[2], [0], [2], [0], [1, 1]]
+[4;36mtest 0054:[0m [[2], [0], [2], [1, 1], [0]]
+[4;36mtest 0055:[0m [[2, 2], [1], [0], [1], [0]]
+[31m	[Error Found]: NO.15 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000015_0000055_assertion-failed [0m
+[4;36mtest 0056:[0m [[2], [1], [0, 0], [1], [2]]
+[31m	[Error Found]: NO.16 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000016_0000056_assertion-failed [0m
+[4;36mtest 0057:[0m [[2], [1, 1], [0], [2], [0]]
+[31m	[Error Found]: NO.17 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000017_0000057_assertion-failed [0m
+[4;36mtest 0058:[0m [[2], [1], [0, 0], [2], [1]]
+[31m	[Error Found]: NO.18 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000018_0000058_assertion-failed [0m
+[4;36mtest 0059:[0m [[2], [1], [2], [0, 0], [1]]
+[31m	[Error Found]: NO.19 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000019_0000059_assertion-failed [0m
+[4;36mtest 0060:[0m [[2], [1], [2], [1], [0, 0]]
+[31m	[Error Found]: NO.20 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000020_0000060_assertion-failed [0m
 [4;36mEnd Testing!
 [0m
 [1;35m
-Total Error Interleavings: 8
+Total Error Interleavings: 20
 Total Timeouts Interleavings: 0
 2 status found:
 	 [0, -6]
 0 results found:
 --------------------------------------------------
 	Last New Find		Total
-Round	0			24
-Time	00:00:00.00000		00:00:00.88676
+Round	0			60
+Time	00:00:00.00000		00:00:10.59241
 [0m

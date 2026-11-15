@@ -1,17 +1,17 @@
 subject	mode	runner	depth	budget	errors	schedules	first_bug_sched	duration_s	status	notes
-CS_account	Period	run_PDS.py	3	10000	29	65	3	2.459	BUGS_OK	rc=0
-CS_account	Serial	run_Serial.py	3	10000	14	36	4	1.357	BUGS_OK	rc=0; [Serial] N= 3 bugDepth= 3 period_limit= 5
-CS_lazy01	Period	run_PDS.py	3	10000	13	39	3	1.079	BUGS_OK	rc=0
-CS_lazy01	Serial	run_Serial.py	3	10000	8	24	4	0.983	BUGS_OK	rc=0; [Serial] N= 3 bugDepth= 3 period_limit= 5
-CS_reorder_3	Period	run_PDS.py	3	10000	6	27	6	0.736	BUGS_OK	rc=0
-CS_reorder_3	Serial	run_Serial.py	3	10000	4	18	10	0.548	BUGS_OK	rc=0; [Serial] N= 3 bugDepth= 3 period_limit= 5
-CS_twostage	Period	run_PDS.py	3	10000	2	33	4	0.770	BUGS_OK	rc=0
-CS_twostage	Serial	run_Serial.py	3	10000	2	33	4	1.181	BUGS_OK	rc=0; [Serial] N= 2 bugDepth= 3 period_limit= 4
-CS_reorder_4	Period	run_PDS.py	3	10000	12	100	9	3.282	BUGS_OK	rc=0
-CS_reorder_4	Serial	run_Serial.py	3	10000	0	24	NA	0.750	OK	rc=0; [Serial] N= 4 bugDepth= 3 period_limit= 6
-CS_bluetooth_driver	Period	run_PDS.py	3	10000	7	47	9	4.358	BUGS_OK	rc=0
-CS_bluetooth_driver	Serial	run_Serial.py	3	10000	7	47	9	5.638	BUGS_OK	rc=0; [Serial] N= 2 bugDepth= 3 period_limit= 4
-CS_wronglock_3	Period	run_PDS.py	3	10000	44	172	6	4.033	BUGS_OK	rc=0
-CS_wronglock_3	Serial	run_Serial.py	3	10000	0	24	NA	0.345	OK	rc=0; [Serial] N= 4 bugDepth= 3 period_limit= 6
-CS_token_ring	Period	run_PDS.py	3	10000	48	232	2	3.834	BUGS_OK	rc=0
-CS_token_ring	Serial	run_Serial.py	3	10000	4	24	7	0.878	BUGS_OK	rc=0; [Serial] N= 4 bugDepth= 3 period_limit= 6
+CS_account	Period	run_PDS.py	3	10000	26	65	10	18.438	BUGS_OK	rc=0
+CS_account	Serial	run_Serial.py	3	10000	56	136	4	33.116	BUGS_OK	rc=0; [Serial] N= 3 bugDepth= 3 period_limit= 5
+CS_lazy01	Period	run_PDS.py	3	10000	13	39	5	6.144	BUGS_OK	rc=0
+CS_lazy01	Serial	run_Serial.py	3	10000	20	60	4	10.739	BUGS_OK	rc=0; [Serial] N= 3 bugDepth= 3 period_limit= 5
+CS_reorder_3	Period	run_PDS.py	3	10000	6	27	6	3.256	BUGS_OK	rc=0
+CS_reorder_3	Serial	run_Serial.py	3	10000	10	30	10	5.342	BUGS_OK	rc=0; [Serial] N= 3 bugDepth= 3 period_limit= 5
+CS_twostage	Period	run_PDS.py	3	10000	2	33	4	1.699	BUGS_OK	rc=0
+CS_twostage	Serial	run_Serial.py	3	10000	2	33	4	1.553	BUGS_OK	rc=0; [Serial] N= 2 bugDepth= 3 period_limit= 4
+CS_reorder_4	Period	run_PDS.py	3	10000	12	100	9	8.655	BUGS_OK	rc=0
+CS_reorder_4	Serial	run_Serial.py	3	10000	90	384	47	61.634	BUGS_OK	rc=0; [Serial] N= 4 bugDepth= 3 period_limit= 6
+CS_bluetooth_driver	Period	run_PDS.py	3	10000	7	205	9	8.766	BUGS_OK	rc=0
+CS_bluetooth_driver	Serial	run_Serial.py	3	10000	7	205	9	9.617	BUGS_OK	rc=0; [Serial] N= 2 bugDepth= 3 period_limit= 4
+CS_wronglock_3	Period	run_PDS.py	3	10000	42	172	6	28.885	BUGS_OK	rc=0
+CS_wronglock_3	Serial	run_Serial.py	3	10000	468	1320	26	294.475	BUGS_OK	rc=0; [Serial] N= 4 bugDepth= 3 period_limit= 6
+CS_token_ring	Period	run_PDS.py	3	10000	53	232	2	33.209	BUGS_OK	rc=0
+CS_token_ring	Serial	run_Serial.py	3	10000	396	2424	7	254.622	BUGS_OK	rc=0; [Serial] N= 4 bugDepth= 3 period_limit= 6

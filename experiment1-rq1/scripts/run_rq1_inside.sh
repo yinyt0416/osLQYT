@@ -16,8 +16,8 @@ summary=/out/rq1_summary.tsv
 echo -e "subject\tmode\trunner\tdepth\tbudget\terrors\tschedules\tfirst_bug_sched\tduration_s\tstatus\tnotes" > "$summary"
 
 count_tests() {
-  # ANSI-safe: match "test NNNN:" anywhere
-  grep -cE 'test [0-9]+:' "$1" 2>/dev/null | head -1 || echo 0
+  # ANSI-safe: count both "test NNNN:" and "test NNNN for prefix ...:".
+  awk '/test [0-9]+(:| for prefix .*:)/ {count++} END {print count+0}' "$1" 2>/dev/null
 }
 
 run_one() {
@@ -54,7 +54,7 @@ run_one() {
   schedules=$(echo "$schedules" | tr -d '\n' | head -c 20)
   first=$(awk '/\[Error Found\]/{print NR; exit}' "$log")
   if [ -n "${first:-}" ]; then
-    first=$(awk -v cut="$first" 'NR<cut && /test [0-9]+:/{c++} END{print c+0}' "$log")
+    first=$(awk -v cut="$first" 'NR<cut && /test [0-9]+(:| for prefix .*:)/{c++} END{print c+0}' "$log")
   else
     first=NA
   fi

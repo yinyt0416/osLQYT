@@ -12,13 +12,13 @@ Everything's fine!
 [*] Analyze Sensitive Memory Operations
 [*] Update Memory Group with Sensitive Memory Operations
 [*] Dumps mempairs and save it into .npz file
--rw-r--r-- 1 root root   51 Nov  2 06:30 ConConfig.reorder_3_bad
--rw-r--r-- 1 root root  197 Nov  2 06:30 mempair.reorder_3_bad
--rw-r--r-- 1 root root 3.4K Nov  2 06:30 mempair.reorder_3_bad.npz
--rw-r--r-- 1 root root 1.9K Nov  2 06:30 mssa.reorder_3_bad
--rw-r--r-- 1 root root  11K Nov  2 06:30 reorder_3_bad.bc
+-rw-r--r-- 1 root root   51 Nov 15 15:04 ConConfig.reorder_3_bad
+-rw-r--r-- 1 root root  197 Nov 15 15:04 mempair.reorder_3_bad
+-rw-r--r-- 1 root root 3.4K Nov 15 15:04 mempair.reorder_3_bad.npz
+-rw-r--r-- 1 root root 1.9K Nov 15 15:04 mssa.reorder_3_bad
+-rw-r--r-- 1 root root  11K Nov 15 15:04 reorder_3_bad.bc
 -rw-rw-r-- 1 root root  63K Jan 16  2022 reorder_3_bad.c
--rw-r--r-- 1 root root 3.8K Nov  2 06:30 so.reorder_3_bad
+-rw-r--r-- 1 root root 3.8K Nov 15 15:04 so.reorder_3_bad
 /workdir/PERIOD/evaluation/CS/reorder_3
 + export Con_PATH=/workdir/PERIOD/evaluation/CS/reorder_3/ConConfig.reorder_3_bad
 + Con_PATH=/workdir/PERIOD/evaluation/CS/reorder_3/ConConfig.reorder_3_bad
@@ -38,10 +38,9 @@ runs_limit: 10000
 [4;36mPerform Dry Run![0m
 
 [4;36mPerform DBDS Run with default system scheduling![0m
-sudo: unable to resolve host 9565ce7bb377: Resource temporarily unavailable
 
 --------------------------------------
-Runtime: 6330
+Runtime: 5960
 ThreadNum:  3
 MaxKpNum:  2
 TupleScheduling: 0
@@ -54,14 +53,14 @@ Consider all variables
 
 [4;36mStart Testing![0m
 [Serial] N= 3 bugDepth= 3 period_limit= 5
-Targeting bugs that bug depth = 2 . Iterate for 3 periods
+Targeting bugs that bug depth = 1 . Iterate for 3 periods
 [4;36mtest 0001:[0m [[0, 0], [1, 1], [2]]
 [4;36mtest 0002:[0m [[0, 0], [2], [1, 1]]
 [4;36mtest 0003:[0m [[1, 1], [0, 0], [2]]
 [4;36mtest 0004:[0m [[1, 1], [2], [0, 0]]
 [4;36mtest 0005:[0m [[2], [0, 0], [1, 1]]
 [4;36mtest 0006:[0m [[2], [1, 1], [0, 0]]
-Targeting bugs that bug depth = 3 . Iterate for 4 periods
+Targeting bugs that bug depth = 2 . Iterate for 4 periods
 [4;36mtest 0007:[0m [[0], [1, 1], [0], [2]]
 [4;36mtest 0008:[0m [[0], [1, 1], [2], [0]]
 [4;36mtest 0009:[0m [[0, 0], [1], [2], [1]]
@@ -82,17 +81,41 @@ Targeting bugs that bug depth = 3 . Iterate for 4 periods
 [31m	The interleavings saved in out_reorder_3_bad_1/Errors/000004_0000016_assertion-failed [0m
 [4;36mtest 0017:[0m [[2], [0], [1, 1], [0]]
 [4;36mtest 0018:[0m [[2], [1], [0, 0], [1]]
-Targeting bugs that bug depth = 4 . Iterate for 5 periods
+Targeting bugs that bug depth = 3 . Iterate for 5 periods
+[4;36mtest 0019:[0m [[0], [1], [0], [1], [2]]
+[4;36mtest 0020:[0m [[0], [1], [0], [2], [1]]
+[4;36mtest 0021:[0m [[0], [1], [2], [0], [1]]
+[31m	[Error Found]: NO.5 assertion failed[0m
+[31m	The interleavings saved in out_reorder_3_bad_1/Errors/000005_0000021_assertion-failed [0m
+[4;36mtest 0022:[0m [[0], [1], [2], [1], [0]]
+[31m	[Error Found]: NO.6 assertion failed[0m
+[31m	The interleavings saved in out_reorder_3_bad_1/Errors/000006_0000022_assertion-failed [0m
+[4;36mtest 0023:[0m [[0], [2], [1], [0], [1]]
+[31m	[Error Found]: NO.7 assertion failed[0m
+[31m	The interleavings saved in out_reorder_3_bad_1/Errors/000007_0000023_assertion-failed [0m
+[4;36mtest 0024:[0m [[1], [0], [1], [0], [2]]
+[4;36mtest 0025:[0m [[1], [0], [1], [2], [0]]
+[4;36mtest 0026:[0m [[1], [0], [2], [0], [1]]
+[31m	[Error Found]: NO.8 assertion failed[0m
+[31m	The interleavings saved in out_reorder_3_bad_1/Errors/000008_0000026_assertion-failed [0m
+[4;36mtest 0027:[0m [[1], [0], [2], [1], [0]]
+[31m	[Error Found]: NO.9 assertion failed[0m
+[31m	The interleavings saved in out_reorder_3_bad_1/Errors/000009_0000027_assertion-failed [0m
+[4;36mtest 0028:[0m [[1], [2], [0], [1], [0]]
+[31m	[Error Found]: NO.10 assertion failed[0m
+[31m	The interleavings saved in out_reorder_3_bad_1/Errors/000010_0000028_assertion-failed [0m
+[4;36mtest 0029:[0m [[2], [0], [1], [0], [1]]
+[4;36mtest 0030:[0m [[2], [1], [0], [1], [0]]
 [4;36mEnd Testing!
 [0m
 [1;35m
-Total Error Interleavings: 4
+Total Error Interleavings: 10
 Total Timeouts Interleavings: 0
 2 status found:
 	 [0, -6]
 0 results found:
 --------------------------------------------------
 	Last New Find		Total
-Round	0			18
-Time	00:00:00.00000		00:00:00.44645
+Round	0			30
+Time	00:00:00.00000		00:00:05.20125
 [0m

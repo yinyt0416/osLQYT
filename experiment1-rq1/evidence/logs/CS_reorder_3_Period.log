@@ -12,13 +12,13 @@ Everything's fine!
 [*] Analyze Sensitive Memory Operations
 [*] Update Memory Group with Sensitive Memory Operations
 [*] Dumps mempairs and save it into .npz file
--rw-r--r-- 1 root root   51 Nov  2 06:30 ConConfig.reorder_3_bad
--rw-r--r-- 1 root root  197 Nov  2 06:30 mempair.reorder_3_bad
--rw-r--r-- 1 root root 3.4K Nov  2 06:30 mempair.reorder_3_bad.npz
--rw-r--r-- 1 root root 1.9K Nov  2 06:30 mssa.reorder_3_bad
--rw-r--r-- 1 root root  11K Nov  2 06:30 reorder_3_bad.bc
+-rw-r--r-- 1 root root   51 Nov 15 15:04 ConConfig.reorder_3_bad
+-rw-r--r-- 1 root root  197 Nov 15 15:04 mempair.reorder_3_bad
+-rw-r--r-- 1 root root 3.4K Nov 15 15:04 mempair.reorder_3_bad.npz
+-rw-r--r-- 1 root root 1.9K Nov 15 15:04 mssa.reorder_3_bad
+-rw-r--r-- 1 root root  11K Nov 15 15:04 reorder_3_bad.bc
 -rw-rw-r-- 1 root root  63K Jan 16  2022 reorder_3_bad.c
--rw-r--r-- 1 root root 3.8K Nov  2 06:30 so.reorder_3_bad
+-rw-r--r-- 1 root root 3.8K Nov 15 15:04 so.reorder_3_bad
 /workdir/PERIOD/evaluation/CS/reorder_3
 + export Con_PATH=/workdir/PERIOD/evaluation/CS/reorder_3/ConConfig.reorder_3_bad
 + Con_PATH=/workdir/PERIOD/evaluation/CS/reorder_3/ConConfig.reorder_3_bad
@@ -38,10 +38,9 @@ runs_limit: 10000
 [4;36mPerform Dry Run![0m
 
 [4;36mPerform DBDS Run with default system scheduling![0m
-sudo: unable to resolve host 9565ce7bb377: Resource temporarily unavailable
 
 --------------------------------------
-Runtime: 6550
+Runtime: 5930
 ThreadNum:  3
 MaxKpNum:  2
 TupleScheduling: 0
@@ -106,5 +105,5 @@ Total Timeouts Interleavings: 0
 --------------------------------------------------
 	Last New Find		Total
 Round	0			27
-Time	00:00:00.00000		00:00:00.63324
+Time	00:00:00.00000		00:00:03.10314
 [0m

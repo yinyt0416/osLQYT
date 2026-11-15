@@ -22,13 +22,13 @@ Everything's fine!
 [*] Analyze Sensitive Memory Operations
 [*] Update Memory Group with Sensitive Memory Operations
 [*] Dumps mempairs and save it into .npz file
--rw-r--r-- 1 root root   95 Nov  2 06:30 ConConfig.lazy01_bad
--rw-r--r-- 1 root root 7.1K Nov  2 06:30 lazy01_bad.bc
+-rw-r--r-- 1 root root   95 Nov 15 15:04 ConConfig.lazy01_bad
+-rw-r--r-- 1 root root 7.1K Nov 15 15:04 lazy01_bad.bc
 -rw-rw-r-- 1 root root  702 Jan 16  2022 lazy01_bad.c
--rw-r--r-- 1 root root  552 Nov  2 06:30 mempair.lazy01_bad
--rw-r--r-- 1 root root 6.5K Nov  2 06:30 mempair.lazy01_bad.npz
--rw-r--r-- 1 root root  841 Nov  2 06:30 mssa.lazy01_bad
--rw-r--r-- 1 root root  776 Nov  2 06:30 so.lazy01_bad
+-rw-r--r-- 1 root root  552 Nov 15 15:04 mempair.lazy01_bad
+-rw-r--r-- 1 root root 6.5K Nov 15 15:04 mempair.lazy01_bad.npz
+-rw-r--r-- 1 root root  841 Nov 15 15:04 mssa.lazy01_bad
+-rw-r--r-- 1 root root  776 Nov 15 15:04 so.lazy01_bad
 /workdir/PERIOD/evaluation/CS/lazy01
 + export Con_PATH=/workdir/PERIOD/evaluation/CS/lazy01/ConConfig.lazy01_bad
 + Con_PATH=/workdir/PERIOD/evaluation/CS/lazy01/ConConfig.lazy01_bad
@@ -51,10 +51,9 @@ runs_limit: 10000
 [4;36mPerform Dry Run![0m
 
 [4;36mPerform DBDS Run with default system scheduling![0m
-sudo: unable to resolve host 9565ce7bb377: Resource temporarily unavailable
 
 --------------------------------------
-Runtime: 5410
+Runtime: 7080
 ThreadNum:  3
 MaxKpNum:  2
 TupleScheduling: 0
@@ -70,11 +69,11 @@ Targeting bugs that bug depth = 1 . Iterate for 2 periods
 [4;36mtest 0001:[0m [[0, 0], [1, 1, 2, 2]]
 [4;36mtest 0002:[0m [[1, 1], [0, 0, 2, 2]]
 [4;36mtest 0003:[0m [[2, 2], [0, 0, 1, 1]]
-[31m	[Error Found]: NO.1 assertion failed[0m
-[31m	The interleavings saved in out_lazy01_bad_1/Errors/000001_0000003_assertion-failed [0m
 Targeting bugs that bug depth = 2 . Iterate for 3 periods
 [4;36mtest 0004:[0m [[0], [1, 1], [0, 2, 2]]
 [4;36mtest 0005:[0m [[1], [0, 0], [1, 2, 2]]
+[31m	[Error Found]: NO.1 assertion failed[0m
+[31m	The interleavings saved in out_lazy01_bad_1/Errors/000001_0000005_assertion-failed [0m
 [4;36mtest 0006:[0m [[0], [2, 2], [0, 1, 1]]
 [4;36mtest 0007:[0m [[2], [0, 0], [1, 1, 2]]
 [4;36mtest 0008:[0m [[1], [2, 2], [0, 0, 1]]
@@ -145,5 +144,5 @@ Total Timeouts Interleavings: 0
 --------------------------------------------------
 	Last New Find		Total
 Round	0			39
-Time	00:00:00.00000		00:00:00.97192
+Time	00:00:00.00000		00:00:05.98801
 [0m
