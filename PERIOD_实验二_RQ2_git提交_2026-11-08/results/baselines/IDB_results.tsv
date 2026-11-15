@@ -1,0 +1,19 @@
+tool	subject	bugs_found	schedules	time_s	status	notes
+IDB	CS_account	4	23	16	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=3 files=4 rc=0; search_done; tool_runtime_s=16
+IDB	CS_lazy01	37	54	32	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=0; search_done; tool_runtime_s=32
+IDB	CS_deadlock01	3	37	24	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=7 files=4 rc=0; search_done; tool_runtime_s=24
+IDB	CS_reorder_3	3	149	91	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=25 files=4 rc=0; search_done; tool_runtime_s=91
+IDB	CS_token_ring	10	76	38	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=10 files=4 rc=0; search_done; tool_runtime_s=38
+IDB	CS_twostage	3	47	27	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=7 files=4 rc=0; search_done; tool_runtime_s=27
+IDB	CS_bluetooth_driver	1	13	9	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=5 files=4 rc=0; search_done; tool_runtime_s=9
+IDB	CS_carter01	13	192	78	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=8 files=4 rc=0; search_done; tool_runtime_s=78
+IDB	CS_stack	150	929	365	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=22 files=4 rc=1; wall_cap; search_done; tool_runtime_s=42
+IDB	CS_circular_buffer	183	520	217	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=25 files=4 rc=0; search_done; tool_runtime_s=217
+IDB	CS_reorder_4	7	417	182	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=205 files=4 rc=0; search_done; tool_runtime_s=182
+IDB	CS_reorder_5	7	844	342	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=0; search_done; tool_runtime_s=342
+IDB	CS_queue	830	1254	505	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=63 files=4 rc=1; wall_cap; search_done; tool_runtime_s=182
+IDB	CS_wronglock_3	62	930	385	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=15 files=4 rc=1; wall_cap; search_done; tool_runtime_s=63
+IDB	CB_stringbuffer	1	19	12	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=9 files=4 rc=0; search_done; tool_runtime_s=12
+IDB	CS_wronglock	33	1571	625	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=31 files=4 rc=1; wall_cap; search_done; tool_runtime_s=303
+IDB	CS_reorder_10	6	1362	528	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=1; wall_cap; search_done; tool_runtime_s=206
+IDB	CB_aget-bug2	0	3	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=1 rc=1; wall_cap

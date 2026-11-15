@@ -1,0 +1,19 @@
+tool	subject	bugs_found	schedules	time_s	status	notes
+DFS	CS_account	4	28	10	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=3 files=1 rc=0; search_done; tool_runtime_s=10
+DFS	CS_lazy01	81	118	50	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=0; search_done; tool_runtime_s=50
+DFS	CS_deadlock01	3	46	17	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=10 files=1 rc=0; search_done; tool_runtime_s=17
+DFS	CS_reorder_3	9	861	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=126 files=1 rc=1; wall_cap
+DFS	CS_token_ring	57	280	87	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=8 files=1 rc=0; search_done; tool_runtime_s=87
+DFS	CS_twostage	3	87	40	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=13 files=1 rc=0; search_done; tool_runtime_s=39
+DFS	CS_bluetooth_driver	1	13	4	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=0; search_done; tool_runtime_s=3
+DFS	CS_carter01	30	891	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=8 files=1 rc=1; wall_cap
+DFS	CS_stack	35	964	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=22 files=1 rc=1
+DFS	CS_circular_buffer	485	954	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=20 files=1 rc=1
+DFS	CS_reorder_4	0	943	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	CS_reorder_5	0	953	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	CS_queue	650	938	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=43 files=1 rc=1; wall_cap
+DFS	CS_wronglock_3	0	954	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	CB_stringbuffer	1	24	8	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=0; search_done; tool_runtime_s=8
+DFS	CS_wronglock	0	931	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	CS_reorder_10	0	926	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	CB_aget-bug2	0	4	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap

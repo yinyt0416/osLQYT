@@ -1,0 +1,19 @@
+tool	subject	bugs_found	schedules	time_s	status	notes
+Maple	CS_account	1	42	11	BUGS_OK	idiom default; profile_runs=5 active_runs=37 rc=0
+Maple	CS_lazy01	1	13	4	BUGS_OK	idiom default; profile_runs=5 active_runs=8 rc=0
+Maple	CS_deadlock01	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+Maple	CS_reorder_3	0	15	6	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+Maple	CS_token_ring	1	34	7	BUGS_OK	idiom default; profile_runs=5 active_runs=29 rc=0
+Maple	CS_twostage	1	14	6	BUGS_OK	idiom default; profile_runs=5 active_runs=9 rc=0
+Maple	CS_bluetooth_driver	0	13	6	OK	idiom default; profile_runs=5 active_runs=8 rc=0
+Maple	CS_carter01	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+Maple	CS_stack	0	12	3	OK	idiom default; profile_runs=5 active_runs=7 rc=0
+Maple	CS_circular_buffer	1	22	5	BUGS_OK	idiom default; profile_runs=5 active_runs=17 rc=0
+Maple	CS_reorder_4	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+Maple	CS_reorder_5	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+Maple	CS_queue	1	32	7	BUGS_OK	idiom default; profile_runs=5 active_runs=27 rc=0
+Maple	CS_wronglock_3	0	23	5	OK	idiom default; profile_runs=5 active_runs=18 rc=0
+Maple	CB_stringbuffer	1	30	7	BUGS_OK	idiom default; profile_runs=5 active_runs=25 rc=0
+Maple	CS_wronglock	0	23	5	OK	idiom default; profile_runs=5 active_runs=18 rc=0
+Maple	CS_reorder_10	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+Maple	CB_aget-bug2	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap

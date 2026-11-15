@@ -1,0 +1,19 @@
+tool	subject	bugs_found	schedules	time_s	status	notes
+PCT	CS_account	180	810	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=5 files=1 rc=1
+PCT	CS_lazy01	384	668	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+PCT	CS_deadlock01	145	831	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=15 files=1 rc=1; wall_cap
+PCT	CS_reorder_3	28	855	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=115 files=1 rc=1; wall_cap
+PCT	CS_token_ring	177	973	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=11 files=1 rc=1; wall_cap
+PCT	CS_twostage	172	926	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=15 files=1 rc=1; wall_cap
+PCT	CS_bluetooth_driver	61	937	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=11 files=1 rc=1; wall_cap
+PCT	CS_carter01	276	971	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=3 files=1 rc=1
+PCT	CS_stack	380	944	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+PCT	CS_circular_buffer	292	981	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+PCT	CS_reorder_4	22	946	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=1; wall_cap
+PCT	CS_reorder_5	9	960	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=1; wall_cap
+PCT	CS_queue	119	928	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=6 files=1 rc=1
+PCT	CS_wronglock_3	57	951	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=10 files=1 rc=1; wall_cap
+PCT	CB_stringbuffer	18	866	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+PCT	CS_wronglock	27	936	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=24 files=1 rc=1; wall_cap
+PCT	CS_reorder_10	2	924	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=439 files=1 rc=1; wall_cap
+PCT	CB_aget-bug2	0	1	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap

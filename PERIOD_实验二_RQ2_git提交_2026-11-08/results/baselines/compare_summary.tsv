@@ -1,0 +1,109 @@
+tool	subject	bugs_found	schedules	time_s	status	notes
+IPB	CS_account	4	27	26	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=3 files=4 rc=0; search_done; tool_runtime_s=26
+IDB	CS_account	4	23	16	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=3 files=4 rc=0; search_done; tool_runtime_s=16
+DFS	CS_account	4	28	10	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=3 files=1 rc=0; search_done; tool_runtime_s=10
+PCT	CS_account	180	810	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=5 files=1 rc=1
+Random	CS_account	100	787	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=8 files=1 rc=1; wall_cap
+Maple	CS_account	1	42	11	BUGS_OK	idiom default; profile_runs=5 active_runs=37 rc=0
+IPB	CS_lazy01	65	98	83	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=0; search_done; tool_runtime_s=83
+IDB	CS_lazy01	37	54	32	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=0; search_done; tool_runtime_s=32
+DFS	CS_lazy01	81	118	50	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=0; search_done; tool_runtime_s=50
+PCT	CS_lazy01	384	668	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Random	CS_lazy01	438	719	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+Maple	CS_lazy01	1	13	4	BUGS_OK	idiom default; profile_runs=5 active_runs=8 rc=0
+IPB	CS_deadlock01	3	42	32	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=9 files=4 rc=0; search_done; tool_runtime_s=32
+IDB	CS_deadlock01	3	37	24	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=7 files=4 rc=0; search_done; tool_runtime_s=24
+DFS	CS_deadlock01	3	46	17	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=10 files=1 rc=0; search_done; tool_runtime_s=17
+PCT	CS_deadlock01	145	831	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=15 files=1 rc=1; wall_cap
+Random	CS_deadlock01	327	868	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Maple	CS_deadlock01	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+IPB	CS_reorder_3	16	810	440	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=43 files=4 rc=0; search_done; tool_runtime_s=440
+IDB	CS_reorder_3	3	149	91	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=25 files=4 rc=0; search_done; tool_runtime_s=91
+DFS	CS_reorder_3	9	861	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=126 files=1 rc=1; wall_cap
+PCT	CS_reorder_3	28	855	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=115 files=1 rc=1; wall_cap
+Random	CS_reorder_3	28	898	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=39 files=1 rc=1; wall_cap
+Maple	CS_reorder_3	0	15	6	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+IPB	CS_token_ring	52	235	156	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=8 files=4 rc=0; search_done; tool_runtime_s=156
+IDB	CS_token_ring	10	76	38	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=10 files=4 rc=0; search_done; tool_runtime_s=38
+DFS	CS_token_ring	57	280	87	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=8 files=1 rc=0; search_done; tool_runtime_s=87
+PCT	CS_token_ring	177	973	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=11 files=1 rc=1; wall_cap
+Random	CS_token_ring	116	914	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=9 files=1 rc=1; wall_cap
+Maple	CS_token_ring	1	34	7	BUGS_OK	idiom default; profile_runs=5 active_runs=29 rc=0
+IPB	CS_twostage	3	58	30	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=9 files=4 rc=0; search_done; tool_runtime_s=30
+IDB	CS_twostage	3	47	27	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=7 files=4 rc=0; search_done; tool_runtime_s=27
+DFS	CS_twostage	3	87	40	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=13 files=1 rc=0; search_done; tool_runtime_s=39
+PCT	CS_twostage	172	926	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=15 files=1 rc=1; wall_cap
+Random	CS_twostage	74	910	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=15 files=1 rc=1; wall_cap
+Maple	CS_twostage	1	14	6	BUGS_OK	idiom default; profile_runs=5 active_runs=9 rc=0
+IPB	CS_bluetooth_driver	1	13	14	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=5 files=4 rc=0; search_done; tool_runtime_s=14
+IDB	CS_bluetooth_driver	1	13	9	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=5 files=4 rc=0; search_done; tool_runtime_s=9
+DFS	CS_bluetooth_driver	1	13	4	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=0; search_done; tool_runtime_s=3
+PCT	CS_bluetooth_driver	61	937	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=11 files=1 rc=1; wall_cap
+Random	CS_bluetooth_driver	127	1010	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=8 files=1 rc=1; wall_cap
+Maple	CS_bluetooth_driver	0	13	6	OK	idiom default; profile_runs=5 active_runs=8 rc=0
+IPB	CS_carter01	25	279	133	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=9 files=4 rc=0; search_done; tool_runtime_s=132
+IDB	CS_carter01	13	192	78	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=8 files=4 rc=0; search_done; tool_runtime_s=78
+DFS	CS_carter01	30	891	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=8 files=1 rc=1; wall_cap
+PCT	CS_carter01	276	971	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=3 files=1 rc=1
+Random	CS_carter01	511	1043	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1
+Maple	CS_carter01	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+IPB	CS_stack	174	1109	448	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=23 files=4 rc=1; wall_cap; search_done; tool_runtime_s=126
+IDB	CS_stack	150	929	365	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=22 files=4 rc=1; wall_cap; search_done; tool_runtime_s=42
+DFS	CS_stack	35	964	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=22 files=1 rc=1
+PCT	CS_stack	380	944	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+Random	CS_stack	572	940	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+Maple	CS_stack	0	12	3	OK	idiom default; profile_runs=5 active_runs=7 rc=0
+IPB	CS_circular_buffer	243	592	278	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=23 files=4 rc=0; search_done; tool_runtime_s=278
+IDB	CS_circular_buffer	183	520	217	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=25 files=4 rc=0; search_done; tool_runtime_s=217
+DFS	CS_circular_buffer	485	954	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=20 files=1 rc=1
+PCT	CS_circular_buffer	292	981	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Random	CS_circular_buffer	866	953	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Maple	CS_circular_buffer	1	22	5	BUGS_OK	idiom default; profile_runs=5 active_runs=17 rc=0
+IPB	CS_reorder_4	3	1469	616	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=359 files=3 rc=1; wall_cap; search_done; tool_runtime_s=294
+IDB	CS_reorder_4	7	417	182	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=205 files=4 rc=0; search_done; tool_runtime_s=182
+DFS	CS_reorder_4	0	943	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CS_reorder_4	22	946	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=1; wall_cap
+Random	CS_reorder_4	8	980	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=68 files=1 rc=1; wall_cap
+Maple	CS_reorder_4	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+IPB	CS_reorder_5	0	1388	483	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=2 rc=1; wall_cap; search_done; tool_runtime_s=161
+IDB	CS_reorder_5	7	844	342	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=0; search_done; tool_runtime_s=342
+DFS	CS_reorder_5	0	953	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CS_reorder_5	9	960	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=1; wall_cap
+Random	CS_reorder_5	2	931	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=68 files=1 rc=1; wall_cap
+Maple	CS_reorder_5	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+IPB	CS_queue	652	918	356	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=98 files=3 rc=1; wall_cap; search_done; tool_runtime_s=34
+IDB	CS_queue	830	1254	505	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=63 files=4 rc=1; wall_cap; search_done; tool_runtime_s=182
+DFS	CS_queue	650	938	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=43 files=1 rc=1; wall_cap
+PCT	CS_queue	119	928	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=6 files=1 rc=1
+Random	CS_queue	906	906	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Maple	CS_queue	1	32	7	BUGS_OK	idiom default; profile_runs=5 active_runs=27 rc=0
+IPB	CS_wronglock_3	78	1455	609	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=243 files=3 rc=1; wall_cap; search_done; tool_runtime_s=286
+IDB	CS_wronglock_3	62	930	385	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=15 files=4 rc=1; wall_cap; search_done; tool_runtime_s=63
+DFS	CS_wronglock_3	0	954	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CS_wronglock_3	57	951	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=10 files=1 rc=1; wall_cap
+Random	CS_wronglock_3	143	959	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Maple	CS_wronglock_3	0	23	5	OK	idiom default; profile_runs=5 active_runs=18 rc=0
+IPB	CB_stringbuffer	1	19	12	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=9 files=4 rc=0; search_done; tool_runtime_s=12
+IDB	CB_stringbuffer	1	19	12	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=9 files=4 rc=0; search_done; tool_runtime_s=12
+DFS	CB_stringbuffer	1	24	8	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=7 files=1 rc=0; search_done; tool_runtime_s=8
+PCT	CB_stringbuffer	18	866	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Random	CB_stringbuffer	60	878	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=23 files=1 rc=1; wall_cap
+Maple	CB_stringbuffer	1	30	7	BUGS_OK	idiom default; profile_runs=5 active_runs=25 rc=0
+IPB	CS_wronglock	0	902	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=1 rc=1; wall_cap
+IDB	CS_wronglock	33	1571	625	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=31 files=4 rc=1; wall_cap; search_done; tool_runtime_s=303
+DFS	CS_wronglock	0	931	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CS_wronglock	27	936	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=24 files=1 rc=1; wall_cap
+Random	CS_wronglock	142	913	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=1 files=1 rc=1; wall_cap
+Maple	CS_wronglock	0	23	5	OK	idiom default; profile_runs=5 active_runs=18 rc=0
+IPB	CS_reorder_10	0	906	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=1 rc=1; wall_cap
+IDB	CS_reorder_10	6	1362	528	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=1; wall_cap; search_done; tool_runtime_s=206
+DFS	CS_reorder_10	0	926	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CS_reorder_10	2	924	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=439 files=1 rc=1; wall_cap
+Random	CS_reorder_10	0	917	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+Maple	CS_reorder_10	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+IPB	CB_aget-bug2	0	2	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=1 rc=1; wall_cap
+IDB	CB_aget-bug2	0	3	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=1 rc=1; wall_cap
+DFS	CB_aget-bug2	0	4	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CB_aget-bug2	0	1	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+Random	CB_aget-bug2	NA	NA	322	FAIL	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+Maple	CB_aget-bug2	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
