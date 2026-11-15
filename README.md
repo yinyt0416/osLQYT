@@ -1,6 +1,6 @@
 # PERIOD 论文复现项目
 
-> **仓库现有贡献说明：** 覃蕾霓（1240025809）负责论文三项主张与复现范围整理，并提交 RQ3 阶段性结果（`claims_1240025809_qinleini`）；殷雨婷（1240017048）负责实验一 RQ1 的代码、脚本、统计修正与重跑结果（`rq1-yinyuting-1240017048`）；谭鸿清（1240026714）负责实验二 RQ2 的复现脚本、结果整理及六基线实测（`rq2`）；Liyuchen（1240016951）负责报告 Introduction 和 RQ3 实验框架及运行说明（`Liyuchen-1240016951`）。
+> **仓库现有贡献说明：** 覃蕾霓（1240025809）负责论文三项主张与复现范围整理，并提交 RQ3 阶段性结果（`claims_1240025809_qinleini`）；殷雨婷（1240017048）负责实验一 RQ1 的代码、脚本、统计修正与重跑结果（`rq1-yinyuting-1240017048`）；谭鸿清（1240026714）负责实验二 RQ2 的复现脚本、结果整理及六基线实测（`rq2`）；李雨辰（1240016951）负责报告 Introduction 和 RQ3 实验框架及运行说明（`Liyuchen-1240016951`）。
 
 > **当前状态：阶段性 README（2026-11-15）**
 > 仓库已形成 RQ1、RQ2、RQ3 的分支材料，但课程要求的三次独立运行、均值 ± 标准差、完整环境快照和最终英文报告仍未全部完成。以下内容只表示当前可核查进度，不代表最终论文结论。
@@ -28,7 +28,7 @@
 | [`claims_1240025809_qinleini`](https://github.com/yinyt0416/osLQYT/tree/claims_1240025809_qinleini) | 覃蕾霓：论文主张 PDF、RQ3 的 11 个科目结果 | 已有阶段性 CSV；仍需统一协议和重复实验 |
 | [`rq1-yinyuting-1240017048`](https://github.com/yinyt0416/osLQYT/tree/rq1-yinyuting-1240017048) | 殷雨婷：`experiment1-rq1/` 脚本、16 份日志和两份汇总 | Serial 与 prefix 统计已修正并完成一次重跑 |
 | [`rq2`](https://github.com/yinyt0416/osLQYT/tree/rq2) | 谭鸿清：RQ2 脚本、PERIOD 历史结果、六基线结果 | 已完成 18 个程序的六基线阶段性实测 |
-| [`Liyuchen-1240016951`](https://github.com/yinyt0416/osLQYT/tree/Liyuchen-1240016951) | Liyuchen：Introduction PDF、RQ3 框架和运行说明 | 框架仍缺其引用的 `scripts/`、`subjects/` 等目录，暂不能独立运行 |
+| [`Liyuchen-1240016951`](https://github.com/yinyt0416/osLQYT/tree/Liyuchen-1240016951) | 李雨辰：Introduction PDF、RQ3 框架和运行说明 | 框架仍缺其引用的 `scripts/`、`subjects/` 等目录，暂不能独立运行 |
 
 仓库中的 `OK`、`BUGS_OK`、`BUGS_TIMEOUT`、`TIMEOUT`、`INCOMPLETE` 和 `NOT_RUN` 含义不同；超时或未运行项目不得表述为成功复现。
 
@@ -70,9 +70,8 @@
 
 - RQ1 修正 Serial 搜索范围和 prefix 计数，完成一次统一参数重跑并更新 16 份日志。
 - RQ2 新增 18 个程序 × 6 种基线的阶段性实测结果。
-- 新增第四位成员分支，提交报告 Introduction 与 RQ3 初步框架；框架依赖文件仍需补齐。
+- 李雨辰新增个人分支，提交报告 Introduction 与 RQ3 初步框架；框架依赖文件仍需补齐。
 - RQ3 上传 11 个科目的阶段性结果；仍需统一协议和完成三次独立运行。
-- `main` 清理临时 RQ3 压缩包，继续只保留统一入口 README。
 
 ## 6. 快速开始
 
