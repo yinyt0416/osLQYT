@@ -1,71 +1,78 @@
 # PERIOD 论文复现项目
 
-> **仓库现有贡献说明：** 各成员的阶段性贡献保存在对应分支中：覃蕾霓（1240025809）负责论文三项主张与复现范围整理（`claims_1240025809_qinleini`）；殷雨婷（1240017048）负责实验一 RQ1 的代码、脚本与初步结果（`rq1-yinyuting-1240017048`）；谭鸿清（1240026714）负责实验二 RQ2 的复现脚本、已有汇总结果与基线框架（`rq2`）。
+> **仓库现有贡献说明：** 覃蕾霓（1240025809）负责论文三项主张与复现范围整理，并提交 RQ3 阶段性结果（`claims_1240025809_qinleini`）；殷雨婷（1240017048）负责实验一 RQ1 的代码、脚本、统计修正与重跑结果（`rq1-yinyuting-1240017048`）；谭鸿清（1240026714）负责实验二 RQ2 的复现脚本、结果整理及六基线实测（`rq2`）；Liyuchen（1240016951）负责报告 Introduction 和 RQ3 实验框架及运行说明（`Liyuchen-1240016951`）。
 
-> **当前状态：阶段性 README（2026-11-08）**  
-> 本仓库仍在持续更新，目前内容用于记录和共享阶段性复现工作，不代表最终实验结论或课程最终报告。
+> **当前状态：阶段性 README（2026-11-15）**
+> 仓库已形成 RQ1、RQ2、RQ3 的分支材料，但课程要求的三次独立运行、均值 ± 标准差、完整环境快照和最终英文报告仍未全部完成。以下内容只表示当前可核查进度，不代表最终论文结论。
 
 ## 1. 项目简介
 
 本项目复现论文 **Controlled Concurrency Testing via Periodical Scheduling**（ICSE 2022）及其开源工具 **PERIOD**，重点检查周期性调度在并发程序测试中的探索能力、缺陷检测效果和运行开销。
 
 - 原论文代码仓库：[wcventure/PERIOD](https://github.com/wcventure/PERIOD)
-- 本项目采用的上游起始提交：`cb8deb9a176e5bb292d70d46557dd61dc0e98069`
+- 上游起始提交：`cb8deb9a176e5bb292d70d46557dd61dc0e98069`
 - 课程复现仓库：[yinyt0416/osLQYT](https://github.com/yinyt0416/osLQYT)
-- 计划采用的主要运行方式：Linux x86_64 服务器 + Docker
+- 主要运行方式：Linux x86_64 / WSL2 + Docker；旧内核基线使用 Ubuntu 14.04（kernel 3.13）
 
 ## 2. 复现问题
 
-项目按照论文的三个研究问题组织：
-
-- **RQ1：探索能力。** 比较 PERIOD 的并行周期调度与 Serial 调度所探索的不同执行前缀。
-- **RQ2：缺陷检测。** 检查 PERIOD 对已知并发缺陷的检测能力，并为论文中的其他基线工具准备对比入口。
-- **RQ3：运行开销。** 在可比工作量下测量 PERIOD 相对原生运行及其他方法的时间开销。
+- **RQ1：探索能力。** 比较 Period 与 Serial 调度探索的执行前缀及错误交错。
+- **RQ2：缺陷检测。** 检查 PERIOD 对已知并发缺陷的检测能力，并与 IPB、IDB、DFS、PCT、Random、Maple 六种基线比较。
+- **RQ3：运行开销。** 比较 Period 与 native 的 wall-clock 时间，并在统一工作量下计算 slowdown。
 
 ## 3. 当前仓库结构
 
-| 分支 | 主要内容 | 当前状态 |
+| 分支 | 负责人及主要内容 | 当前状态 |
 | --- | --- | --- |
-| `main` | 仓库统一入口 README | 当前为阶段性版本，后续持续更新 |
-| [`claims_1240025809_qinleini`](https://github.com/yinyt0416/osLQYT/tree/claims_1240025809_qinleini) | 论文主张整理分支 | 已提交论文三项主张与复现范围整理文档 |
-| [`rq1-yinyuting-1240017048`](https://github.com/yinyt0416/osLQYT/tree/rq1-yinyuting-1240017048) | `experiment1-rq1/`：RQ1 代码、脚本、日志和简要说明 | 已上传初步结果，仍需校准统计口径 |
-| [`rq2`](https://github.com/yinyt0416/osLQYT/tree/rq2) | RQ2 运行脚本、结果整理和基线框架 | 已有阶段性材料，部分长任务超时，外部基线尚未运行 |
-| （待创建）RQ3 分支 | RQ3 等工作量性能测试 | 尚未上传，测量方法仍在修正 |
+| `main` | 仓库统一入口 README | 仅保存项目总览，不放实验原始材料 |
+| [`claims_1240025809_qinleini`](https://github.com/yinyt0416/osLQYT/tree/claims_1240025809_qinleini) | 覃蕾霓：论文主张 PDF、RQ3 的 11 个科目结果 | 已有阶段性 CSV；仍需统一协议和重复实验 |
+| [`rq1-yinyuting-1240017048`](https://github.com/yinyt0416/osLQYT/tree/rq1-yinyuting-1240017048) | 殷雨婷：`experiment1-rq1/` 脚本、16 份日志和两份汇总 | Serial 与 prefix 统计已修正并完成一次重跑 |
+| [`rq2`](https://github.com/yinyt0416/osLQYT/tree/rq2) | 谭鸿清：RQ2 脚本、PERIOD 历史结果、六基线结果 | 已完成 18 个程序的六基线阶段性实测 |
+| [`Liyuchen-1240016951`](https://github.com/yinyt0416/osLQYT/tree/Liyuchen-1240016951) | Liyuchen：Introduction PDF、RQ3 框架和运行说明 | 框架仍缺其引用的 `scripts/`、`subjects/` 等目录，暂不能独立运行 |
 
-仓库中保存的日志和汇总文件用于保留可核查证据。标记为 `NOT_RUN`、`INCOMPLETE` 或 `TIMEOUT` 的项目不应被解释为已经成功复现。
+仓库中的 `OK`、`BUGS_OK`、`BUGS_TIMEOUT`、`TIMEOUT`、`INCOMPLETE` 和 `NOT_RUN` 含义不同；超时或未运行项目不得表述为成功复现。
 
 ## 4. 当前复现进度
 
 ### RQ1：探索能力
 
-- 已整理 8 个测试对象的 Period/Serial 两组运行材料，共 16 份原始日志。
-- 已提供队列脚本、结果收集脚本和 `rq1_summary.tsv` 汇总入口。
-- 当前结果属于初步结果：旧统计脚本可能少计日志中的 `test ... for prefix` 记录，例如 `bluetooth_driver` 的汇总数与原始日志计数不一致。
-- Serial 组的长周期探索仍需在服务器上继续运行和校准，因此暂不作最终优劣结论。
+- 已对 8 个测试对象完成一次修复后的 Period/Serial 对照，共 16 份原始日志。
+- 已修正 Serial 相对 bug depth，N=4、depth=3 时不再错误跳过第 5、6 周期。
+- 已修正 `test NNNN for prefix ...:` 漏计问题，日志与汇总现已一致。
+- 关键回归结果：`reorder_3` Serial=30、`reorder_4` Serial=384、`bluetooth_driver` Period/Serial=205。
+- 当前仅运行一次，尚不能形成均值 ± 标准差或最终优劣结论。
 
 ### RQ2：缺陷检测
 
-- 已保留 smoke test 历史日志，并整理了 PERIOD 自身检测流程及 SCTBench/CVE 结果框架。
-- 最近一次 SCTBench 汇总包含 37 条记录，其中部分任务已完成，另有 7 条为超时或不完整状态，后续需要续跑。
-- IPB、IDB、DFS、PCT、Random 和 Maple 等外部基线目前仍为 `NOT_RUN`；仓库中的相关脚本只是接口框架，不等同于基线结果。
-- 历史 CVE 汇总与当前保留的原始日志数量尚未完全对应，最终报告前需要补齐证据链。
+- 已保留 PERIOD smoke、CVE、SCTBench 的脚本、历史汇总和部分原始日志。
+- 本周已在 Ubuntu 14.04（kernel 3.13）上对 18 个程序运行 IPB、IDB、DFS、PCT、Random 和 Maple，参数为调度上限 10000、墙钟上限 300 秒。
+- `results/baselines/` 保存六种工具的独立 TSV 和 `compare_summary.tsv`；部分组合为 `BUGS_TIMEOUT`、`TIMEOUT` 或 `FAIL`。
+- 尚未进入本轮队列的程序没有结果；PERIOD 与六基线的指标定义和超时口径仍需在最终对照表中统一。
+- CVE 历史汇总与现有原始日志仍需补齐完整证据链。
 
 ### RQ3：运行开销
 
-- 本地已有早期计时材料，但现有指标使用“完整搜索时间 / 单次原生运行时间”，与论文图表要求的等工作量比较不一致。
-- 后续将统一工作量，每个配置至少独立运行 3 次，并报告均值和标准差。
-- 在重新测量完成前，仓库不发布 RQ3 的最终性能结论。
+- `Liyuchen-1240016951` 分支提供 RQ3 框架、`run_queue.sh` 和提交说明，但脚本引用的 `scripts/`、`subjects/`、`prior_results/` 尚未随分支提交。
+- `claims_1240025809_qinleini` 分支提供 11 个 Period-versus-native 科目的阶段性 CSV。
+- 当前 slowdown 为 `tool_s / native_s`；部分结果来自不同批次，且每个配置尚未完成至少三次独立运行。
+- 在统一计时协议、保留每次原始样本并报告均值 ± 标准差之前，不发布最终性能结论。
 
-## 5. 运行环境
+## 5. 周进展
 
-建议在 Linux x86_64 多核服务器上运行：
+### 上周（截至 2026-11-08）
 
-- Docker
-- 可使用特权容器的账号
-- 足够的磁盘空间保存镜像、构建产物和日志
-- PERIOD 镜像：`wcventure/period:stable`
+- 建立 `main` 项目入口和贡献说明。
+- RQ1 上传 8 个对象的初步 Period/Serial 脚本、日志和汇总。
+- RQ2 上传 PERIOD 自身检出材料及六基线运行框架，六基线当时尚未实测。
+- 完成论文三项主张与复现范围的初步整理；RQ3 尚未形成远程分支材料。
 
-PERIOD 使用 Linux `SCHED_DEADLINE` 调度能力，因此容器通常需要 `--privileged`。Windows/macOS 本机可用于整理代码和结果，但不建议作为核心实验环境。
+### 本周（2026-11-09 至 2026-11-15）
+
+- RQ1 修正 Serial 搜索范围和 prefix 计数，完成一次统一参数重跑并更新 16 份日志。
+- RQ2 新增 18 个程序 × 6 种基线的阶段性实测结果。
+- 新增第四位成员分支，提交报告 Introduction 与 RQ3 初步框架；框架依赖文件仍需补齐。
+- RQ3 上传 11 个科目的阶段性结果；仍需统一协议和完成三次独立运行。
+- `main` 清理临时 RQ3 压缩包，继续只保留统一入口 README。
 
 ## 6. 快速开始
 
@@ -74,16 +81,11 @@ PERIOD 使用 Linux `SCHED_DEADLINE` 调度能力，因此容器通常需要 `--
 ```bash
 git clone https://github.com/yinyt0416/osLQYT.git
 cd osLQYT
-
 docker pull wcventure/period:stable
 docker tag wcventure/period:stable period:latest
 ```
 
-首次拉取镜像和构建测试对象耗时较长；实际运行时间与服务器配置、测试对象和超时设置有关。
-
-### 查看并运行 RQ1
-
-以下命令从仓库根目录执行：
+### RQ1
 
 ```bash
 git switch rq1-yinyuting-1240017048
@@ -91,9 +93,9 @@ cd experiment1-rq1
 bash run_queue.sh rq1
 ```
 
-RQ1 默认按队列执行测试对象，并将日志和汇总写入实验目录。部分任务的单项超时上限为 480 秒，完整运行前请先阅读该分支中的 `RQ1_GIT_NOTE.md` 和脚本参数。
+默认参数为 depth=3、预算 10000、单项超时 480 秒，输出写入 `results/rq1/`。
 
-### 查看 RQ2
+### RQ2
 
 ```bash
 git switch rq2
@@ -101,29 +103,35 @@ cd PERIOD_实验二_RQ2_git提交_2026-11-08
 bash run_queue.sh smoke
 ```
 
-RQ2 包含短流程验证、长时间实验和结果整理材料。上面的命令只执行 smoke test；历史正常输出包含 `Total Error Interleavings: 4`。确认短流程成功后，再依据该分支说明启动 CVE/SCTBench 长任务。长任务可达到 3600 秒超时上限，运行前应检查输出目录、参数和服务器剩余空间。外部基线目前尚未具备一键复现条件。
+PERIOD 自身实验可通过 `period`、`cve`、`sctbench` 等阶段运行。六基线依赖旧内核环境，不应在现代内核容器中伪装运行。
 
-## 7. 结果记录约定
+### RQ3
 
-- 保存运行命令、开始/结束时间、服务器配置、退出码和原始日志。
-- 原始证据与人工整理的汇总分开保存，不直接修改原始日志。
-- 明确区分 `OK`、`BUGS_OK`、`TIMEOUT`、`INCOMPLETE` 和 `NOT_RUN`。
-- 任何论文级结论都必须能追溯到对应脚本、配置和原始输出。
-- 性能实验使用相同工作量，并至少重复 3 次后报告均值和标准差。
+```bash
+git switch Liyuchen-1240016951
+cd "PERIOD_RQ3_commit1_framework(1)"
+```
 
-## 8. 分支与提交规范
+该分支目前用于查看框架和说明，尚不能直接执行 `run_queue.sh`。RQ3 阶段性结果位于 `claims_1240025809_qinleini` 分支的 `PERIOD_RQ3_commit2_results/results/rq3/`。
 
-各成员应在独立分支完成实验，检查后再通过 Pull Request 合并到 `main`。根据课程要求，每条提交信息必须包含**实际提交人的学号和姓名**
+## 7. 结果记录与提交规范
 
-## 9. 下一步工作
+- 保存运行命令、run ID、开始与结束时间、硬件、系统与内核、编译器、镜像 digest、参数、退出码和原始日志。
+- 原始证据与汇总分开保存；重复实验使用 `run_01/run_02/run_03` 等独立目录，不互相覆盖。
+- 报告中的每一个数字必须能够追溯到对应脚本、配置和原始日志。
+- 每个正式配置至少独立运行 3 次，报告均值 ± 标准差。
+- 每位成员使用自己的 GitHub 账号提交实质内容；每条 commit message 必须包含实际提交人的学号和全名。
+- 最终版本通过检查后打标签 `v1.0`。
 
-1. 修正 RQ1 前缀计数脚本，并在服务器上完成 Period/Serial 的统一参数重跑。
-2. 续跑 RQ2 中超时或不完整的测试对象，补齐 CVE 原始证据。
-3. 安装并实际运行可复现的 RQ2 外部基线；无法运行的项目记录具体原因。
-4. 按等工作量和多次重复原则重新测量 RQ3。
-5. 汇总服务器软硬件环境、复现偏差和完整运行命令。
-6. 所有证据检查通过后，再更新最终 README 和英文 PDF 报告。
+## 8. 下一步工作
 
-## 10. 来源与说明
+1. 对 RQ1、RQ2、RQ3 的正式子集各完成至少三次独立运行，并保留逐次日志。
+2. 为 RQ2 统一 PERIOD 与六基线的 bug、schedule、first bug 和 timeout 指标定义。
+3. 补齐 RQ3 框架引用的脚本、科目表和环境文件，统一等工作量计时协议并重新计算 Paper vs. Ours slowdown。
+4. 补齐 CVE、SCTBench 和基线原始证据、环境快照及偏差表。
+5. 完成单因素 Extension、英文最终报告、图表、贡献声明与 AI 使用声明。
+6. 最终核查 README 可复现性、提交历史和成员贡献后打 `v1.0`。
 
-本项目基于 [wcventure/PERIOD](https://github.com/wcventure/PERIOD) 开展课程复现，上游代码采用 **MIT License**。上游代码的版权与许可证文本以原仓库为准；本仓库新增脚本、实验配置和结果说明应同时记录作者、日期及相对上游的修改。
+## 9. 来源与说明
+
+本项目基于 [wcventure/PERIOD](https://github.com/wcventure/PERIOD) 开展课程复现，上游代码采用 **MIT License**。上游代码的版权和许可证文本以原仓库为准；本仓库新增脚本、实验配置和结果说明应记录作者、日期及相对上游的修改。
