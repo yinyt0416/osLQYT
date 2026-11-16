@@ -17,3 +17,16 @@ PCT	CB_stringbuffer	18	866	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 
 PCT	CS_wronglock	27	936	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=24 files=1 rc=1; wall_cap
 PCT	CS_reorder_10	2	924	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=439 files=1 rc=1; wall_cap
 PCT	CB_aget-bug2	0	1	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	CB_pbzip2-0.9.4	0	4509	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	Chess_WSQ	0	2577	322	OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1
+PCT	Chess_ILWSQ	54	661	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=24 files=1 rc=1
+PCT	Inspect_qsort_mt	33	868	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=109 files=1 rc=1; wall_cap
+PCT	SafeStack	0	748	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	Splash2_fft	350	712	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+PCT	Splash2_lu	323	660	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1
+PCT	CS_reorder_20	2	788	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=219 files=1 rc=1; wall_cap
+PCT	Chess_StateWSQ	0	428	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+PCT	Chess_ILWSQState	0	411	322	OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1
+PCT	Inspect_boundedBuffer	0	718	322	OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1
+PCT	Splash2_barnes	233	470	322	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1
+PCT	CS_twostage_100	0	651	322	OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1

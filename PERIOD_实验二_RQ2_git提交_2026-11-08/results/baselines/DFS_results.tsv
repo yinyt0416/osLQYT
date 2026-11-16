@@ -17,3 +17,16 @@ DFS	CB_stringbuffer	1	24	8	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=fi
 DFS	CS_wronglock	0	931	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
 DFS	CS_reorder_10	0	926	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
 DFS	CB_aget-bug2	0	4	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	CB_pbzip2-0.9.4	0	4254	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Chess_WSQ	0	4179	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Chess_ILWSQ	0	665	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Inspect_qsort_mt	0	804	322	OK	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1
+DFS	SafeStack	0	807	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Splash2_fft	539	726	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+DFS	Splash2_lu	465	628	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+DFS	CS_reorder_20	0	762	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Chess_StateWSQ	0	434	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Chess_ILWSQState	0	423	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Inspect_boundedBuffer	0	704	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap
+DFS	Splash2_barnes	86	455	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=2 files=1 rc=1; wall_cap
+DFS	CS_twostage_100	0	631	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=finished_executions first_bug_at=None files=1 rc=1; wall_cap

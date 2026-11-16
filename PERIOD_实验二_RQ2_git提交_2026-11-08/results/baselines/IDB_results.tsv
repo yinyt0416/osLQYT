@@ -17,3 +17,16 @@ IDB	CB_stringbuffer	1	19	12	BUGS_OK	limit=10000 timelimit=300s depth<=3 metric=n
 IDB	CS_wronglock	33	1571	625	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=31 files=4 rc=1; wall_cap; search_done; tool_runtime_s=303
 IDB	CS_reorder_10	6	1362	528	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=1; wall_cap; search_done; tool_runtime_s=206
 IDB	CB_aget-bug2	0	3	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=1 rc=1; wall_cap
+IDB	CB_pbzip2-0.9.4	0	4105	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=2 rc=1; wall_cap; search_done; tool_runtime_s=0
+IDB	Chess_WSQ	0	4156	322	OK	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=2 rc=1; search_done; tool_runtime_s=0
+IDB	Chess_ILWSQ	0	728	384	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=3 rc=1; wall_cap; search_done; tool_runtime_s=62
+IDB	Inspect_qsort_mt	22	1067	471	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=1 files=4 rc=1; wall_cap; search_done; tool_runtime_s=149
+IDB	SafeStack	0	958	356	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=3 rc=1; wall_cap; search_done; tool_runtime_s=34
+IDB	Splash2_fft	349	809	379	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=2 files=3 rc=1; wall_cap; search_done; tool_runtime_s=57
+IDB	Splash2_lu	292	655	360	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=2 files=3 rc=1; wall_cap; search_done; tool_runtime_s=37
+IDB	CS_reorder_20	0	829	360	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=3 rc=1; wall_cap; search_done; tool_runtime_s=38
+IDB	Chess_StateWSQ	1	430	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=219 files=2 rc=1; wall_cap; search_done; tool_runtime_s=0
+IDB	Chess_ILWSQState	1	427	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=219 files=2 rc=1; wall_cap; search_done; tool_runtime_s=0
+IDB	Inspect_boundedBuffer	0	1151	579	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=3 rc=1; wall_cap; search_done; tool_runtime_s=256
+IDB	Splash2_barnes	3	443	322	BUGS_TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=2 files=2 rc=1; wall_cap; search_done; tool_runtime_s=0
+IDB	CS_twostage_100	0	638	322	TIMEOUT	limit=10000 timelimit=300s depth<=3 metric=new_schedules first_bug_at=None files=2 rc=1; wall_cap; search_done; tool_runtime_s=0

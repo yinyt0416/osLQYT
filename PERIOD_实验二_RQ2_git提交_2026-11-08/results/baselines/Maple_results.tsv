@@ -17,3 +17,16 @@ Maple	CB_stringbuffer	1	30	7	BUGS_OK	idiom default; profile_runs=5 active_runs=2
 Maple	CS_wronglock	0	23	5	OK	idiom default; profile_runs=5 active_runs=18 rc=0
 Maple	CS_reorder_10	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
 Maple	CB_aget-bug2	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+Maple	CB_pbzip2-0.9.4	0	NA	300	TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+Maple	Chess_WSQ	1	11	6	BUGS_OK	idiom default; profile_runs=9 active_runs=2 rc=0
+Maple	Chess_ILWSQ	0	15	6	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+Maple	Inspect_qsort_mt	0	35	8	OK	idiom default; profile_runs=5 active_runs=30 rc=0
+Maple	SafeStack	0	17	4	OK	idiom default; profile_runs=5 active_runs=12 rc=0
+Maple	Splash2_fft	0	4	1	OK	idiom default; profile_runs=3 active_runs=1 rc=0
+Maple	Splash2_lu	0	4	6	OK	idiom default; profile_runs=3 active_runs=1 rc=0
+Maple	CS_reorder_20	0	15	4	OK	idiom default; profile_runs=5 active_runs=10 rc=0
+Maple	Chess_StateWSQ	0	58	24	OK	idiom default; profile_runs=9 active_runs=49 rc=0
+Maple	Chess_ILWSQState	0	48	19	OK	idiom default; profile_runs=7 active_runs=41 rc=0
+Maple	Inspect_boundedBuffer	0	130	91	OK	idiom default; profile_runs=6 active_runs=124 rc=0
+Maple	Splash2_barnes	1	NA	300	BUGS_TIMEOUT	idiom default; profile_runs=None active_runs=None rc=124; wall_cap
+Maple	CS_twostage_100	0	17	5	OK	idiom default; profile_runs=5 active_runs=12 rc=0
