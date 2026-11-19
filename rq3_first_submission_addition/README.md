@@ -1,41 +1,49 @@
-# PERIOD 实验三 · RQ3 开销 Period vs native · git 提交版（2026-11-08）
+# PERIOD 实验三：RQ3 复现结果
 
-独立 mini-repo。对应论文 **RQ3**：native wall-time vs Period（精选科目）。
+本目录记录 RQ3 中 Period 与 native 的运行开销对比，以及 CVE 手动复现和重复测量结果。
 
-**不含** RQ1 Serial（见实验一）、**不含** RQ2 自身检出/基线（见实验二）。  
+## 当前已完成
 
-相对 IPB/IDB/PCT 的开销对比仍为 **NOT_RUN**（依赖实验二旧内核基线实测；本机 kernel 6.12 不可跑 Pin）。
+- 11 个 benchmark 的 Period/native 开销测量；
+- 9 个 CVE 的手动复现成功；
+- CVE-2016-1973 的 dry-run SEGV 失败记录；
+- CVE-2017-6346 的 5 次重复测量；
+- 运行脚本、结果 CSV 和 RQ3 报告。
 
+主要结果文件：
 
-## Docker 前置
+```text
+results/rq3/rq3_overhead.csv
+results/rq3/rq3_cve_manual.csv
+results/rq3/rq3_repeated_summary.csv
+reports/rq3-final.md
+scripts/repeat_rq3.sh
+```
+
+## CVE-2017-6346 五次重复测量
+
+```text
+native mean  = 1.013733 s
+native stdev = 0.008283 s
+Period mean  = 57.458043 s
+Period stdev = 9.638607 s
+slowdown     = 56.679690x
+timeouts     = 0
+```
+
+Period 错误交错数为 `80, 79, 81, 79, 75`。native 日志中的 `sched_setattr: Invalid argument` 是 Windows Docker Desktop/WSL2 环境限制，已在报告中注明。
+
+## 尚未完成
+
+IPB、IDB、PCT 尚未进行实际测量，当前标记为 `NOT_RUN`。这些工具需要兼容的旧版 Linux/Pin/SCTBench 环境，本机 WSL2 内核不满足要求。
+
+## 运行方式
+
+在 PERIOD 容器内执行：
 
 ```bash
-docker pull wcventure/period:stable
-docker tag wcventure/period:stable period:latest
+chmod +x scripts/repeat_rq3.sh
+scripts/repeat_rq3.sh 2017-6346 5 600
 ```
 
 
-## 目录
-
-| 路径 | 含义 |
-|------|------|
-| `scripts/run_rq3*.sh` | RQ3 容器内外跑法 |
-| `subjects/rq3_subjects.tsv` | RQ3 科目表（11 科） |
-| `prior_results/rq3/` | 只读 PRIOR（含 merged + expand） |
-| `results/rq3/` | 你的新跑 |
-
-## 跑完 git add
-
-见 `SUBMIT.md`：`results/rq3/rq3_overhead.csv`。
-
-## 本次第一次提交补充
-
-本提交补充了 11 个 RQ3 subject 的运行脚本和统一 Period/native 开销结果：
-
-- scripts/run_rq3.sh：宿主机入口脚本
-- scripts/run_rq3_inside.sh：容器内运行脚本
-- subjects/rq3_subjects.tsv：11 个 subject 清单
-- 
-esults/rq3/rq3_overhead.csv：native 时间、Period 时间、slowdown、schedules 和 errors
-
-IPB、IDB、PCT、CVE 手动补充和五次重复测量不属于本次第一次提交。
