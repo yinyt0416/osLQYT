@@ -1,0 +1,4 @@
+PERIOD RQ3 复现总结
+RQ3 比较 Period 与 native 程序的运行开销。统一队列结果包含 11 个 SCTBench/CB 科目；手动补充表包含 10 个 ConVul-CVE 科目，其中 9 个有有效 Period 时间，CVE-2016-1973 在 Dry Run 阶段触发 AddressSanitizer SEGV，因此不计算 slowdown。
+所有手动 CVE 数据均为单次测量。Docker Desktop/WSL2 的宿主负载和调度差异可能影响 wall-clock 时间，因此这些数据用于流程验证和相对趋势比较。
+IPB、IDB、PCT 未运行。它们依赖旧版 Pin 和旧 Linux 内核；当前 WSL2 6.x 内核不兼容。不能把 stub 或 NOT_RUN 行改成实验结果。
