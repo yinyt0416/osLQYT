@@ -1,0 +1,5 @@
+subject	rel_dir	bin	depth	priority	notes
+CS_reorder_4	evaluation/CS/reorder_4	reorder_4_bad	3	P1	expand small
+CS_token_ring	evaluation/CS/token_ring	token_ring_bad	3	P1	expand small
+CS_bluetooth_driver	evaluation/CS/bluetooth_driver	bluetooth_driver_bad	3	P1	expand small
+CS_wronglock_3	evaluation/CS/wronglock_3	wronglock_3_bad	3	P1	expand medium-small
