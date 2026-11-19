@@ -35,7 +35,7 @@ Period 错误交错数为 `80, 79, 81, 79, 75`。native 日志中的 `sched_seta
 
 ## 尚未完成
 
-IPB、IDB、PCT 尚未进行实际测量，当前标记为 `NOT_RUN`。这些工具需要兼容的旧版 Linux/Pin/SCTBench 环境，本机 WSL2 内核不满足要求。
+IPB、IDB、PCT 尚未进行实际测量，当前标记为 `NOT_RUN`。由成员liyucheng进行此部分操作。
 
 ## 运行方式
 
