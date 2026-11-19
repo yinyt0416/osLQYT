@@ -1,0 +1,11 @@
+subject,native_s,period_s,slowdown,schedules,errors,timeouts,status,notes
+CVE-2017-6346,1.047,61.770,59.00,182,80,0,OK,manual single run
+CVE-2016-7911,0.013,9.373,721.00,19,9,0,OK,manual single run
+CVE-2016-9806,0.015,7.987,532.47,42,4,0,OK,manual single run
+CVE-2015-7550,0.154,5.652,36.70,14,6,0,OK,manual single run
+CVE-2011-2183,0.024,99.305,4137.71,381,130,0,OK,manual single run
+CVE-2009-3547,0.131,5.562,42.46,6,3,0,OK,manual single run
+CVE-2013-1792,0.021,2.549,121.40,71,2,0,OK,manual single run
+CVE-2017-15265,0.160,2.487,15.54,96,1,0,OK,manual single run
+CVE-2016-1972,0.033,9.465,286.82,55,5,0,OK,manual single run
+CVE-2016-1973,0.035,NA,NA,NA,SEGV,0,FAIL_DRY_RUN_SEGV,PERIOD aborted during dry run
