@@ -1,0 +1,82 @@
+{
+  "formal_slots": 550,
+  "unique_slots": 550,
+  "statuses": {
+    "OK": 460,
+    "UNSUPPORTED_ASAN_PIN": 40,
+    "TIMEOUT": 50
+  },
+  "primary_statuses": {
+    "OK": 400,
+    "TIMEOUT": 50
+  },
+  "verified_counts_and_means": true,
+  "source_checks": [
+    {
+      "subject": "doubleFree",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_account",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_lazy01",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_twostage",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_reorder_3",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_circular_buffer",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CB_stringbuffer",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_reorder_4",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_token_ring",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_bluetooth_driver",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    },
+    {
+      "subject": "CS_wronglock_3",
+      "source_hashes_match": true,
+      "slots": 50,
+      "keys_unique": true
+    }
+  ]
+}

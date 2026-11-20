@@ -1,0 +1,43 @@
+{
+  "run_id": "unified20261120v2",
+  "subjects": [
+    "doubleFree",
+    "CS_account",
+    "CS_lazy01",
+    "CS_twostage",
+    "CS_reorder_3",
+    "CS_circular_buffer",
+    "CB_stringbuffer",
+    "CS_reorder_4",
+    "CS_token_ring",
+    "CS_bluetooth_driver",
+    "CS_wronglock_3"
+  ],
+  "repeats": 10,
+  "budget": 10000,
+  "bug_depth": 3,
+  "ipb_idb_bounds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "outer_wall_limit_s": 300,
+  "target_timeout_s": 5,
+  "native_batch": 20,
+  "tools": [
+    "Period",
+    "IPB",
+    "IDB"
+  ],
+  "native_references": [
+    "period",
+    "baseline"
+  ],
+  "timing": "mean target process invocation latency including launcher; search wall time stored separately",
+  "limitations": [
+    "Different kernels and compilers across backend environments; normalize against native in each environment",
+    "Bound/schedule definitions differ across tools; completed invocations are not unique schedules",
+    "Timeout attempts retained; slowdown left empty for incomplete runs; no claim of exact Figure 7 reproduction"
+  ]
+}
