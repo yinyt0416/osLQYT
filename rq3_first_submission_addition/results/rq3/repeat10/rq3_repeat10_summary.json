@@ -1,0 +1,20 @@
+{
+  "excluded_repeats": [7, 8, 10],
+  "exclusion_reasons": {
+    "7": {"native_status": "OK", "period_status": "TARGET_TIMEOUTS", "period_target_timeouts": 5},
+    "8": {"native_status": "OK", "period_status": "NO_COMPLETED_EXECUTIONS", "period_target_timeouts": 0},
+    "10": {"native_status": "OK", "period_status": "TARGET_TIMEOUTS", "period_target_timeouts": 4}
+  },
+  "subject": "CVE-2017-6346",
+  "total_pairs": 10,
+  "valid_native_mean_s": 0.007858313335704484,
+  "valid_pairs": 7,
+  "valid_period_completed_mean": 182,
+  "valid_period_mean_s": 0.2992358968281245,
+  "valid_period_reported_errors_mean": 79.28571428571429,
+  "valid_period_wall_mean_s": 54.79390552899973,
+  "valid_slowdown_max": 68.3037114436873,
+  "valid_slowdown_mean": 53.66222864676921,
+  "valid_slowdown_min": 14.120030520595998,
+  "valid_slowdown_stdev": 17.88922210821678
+}

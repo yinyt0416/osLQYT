@@ -1,0 +1,2 @@
+subject,repeats,native_mean_s,native_stdev_s,period_mean_s,period_stdev_s,slowdown,mean_errors,mean_timeouts,status,notes
+CVE-2017-6346,5,1.013733,0.008283,57.458043,9.638607,56.679690,78.8,0,OK_WITH_ENV_WARNING,Historical result only; Native runs returned 255 with WSL2 sched_setattr Invalid argument; do not use as the primary conclusion

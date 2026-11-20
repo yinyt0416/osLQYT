@@ -8,24 +8,26 @@
 - 结果保存于 `results/rq3/rq3_overhead.csv`；
 - 完成 9 个 CVE 的手动复现；
 - 记录 CVE-2016-1973 dry-run SEGV；
-- 完成 CVE-2017-6346 五次重复测量；
+- 完成 CVE-2017-6346 十轮配对正式实验，并记录 3 个无效轮次；
+- 将存在环境警告的早期五轮结果移入历史归档；
 - 记录 native/Period 均值、标准差、slowdown、错误数和超时数；
 - 提供 `scripts/repeat_rq3.sh` 自动重复运行脚本；
 - 完成 RQ3 报告。
 
-## 重复测量结果
+## 正式重复测量结果
 
 subject：`CVE-2017-6346`
 
 | metric | value |
 |---|---:|
-| native mean | 1.013733 s |
-| native stdev | 0.008283 s |
-| Period mean | 57.458043 s |
-| Period stdev | 9.638607 s |
-| slowdown | 56.679690x |
-| Period timeouts | 0 |
-| Period errors | 80, 79, 81, 79, 75 |
+| 有效配对 | 7 / 10 |
+| Native 单次延迟均值 | 7.858 ms |
+| Period 单次延迟均值 | 299.236 ms |
+| slowdown 均值 | 53.66x |
+| slowdown 中位数 | 58.22x |
+| slowdown 范围 | 14.12x–68.30x |
+
+原始逐轮数据位于 `results/rq3/repeat10/`。早期五轮整轮计时结果位于 `results/rq3/archive/five_round_legacy/`，仅供历史追溯，不作为主结论。
 
 ## TODO / NOT_RUN
 
