@@ -16,6 +16,7 @@
 | `results/rq3/rq3_overhead.csv` | Period vs native |
 | `results/rq3/repeat10/` | CVE-2017-6346 十轮配对正式结果 |
 | `results/rq3/archive/five_round_legacy/` | 早期五轮历史记录，不作为主结论 |
+| `scripts/repeat10/` | 十轮配对实验的实际运行、计时与汇总脚本 |
 | （可选）`results/rq3/logs/*.log` 精选 | 体积可控时 |
 
 ## 禁止提交
@@ -32,4 +33,5 @@ git add results/.gitkeep results/rq3/.gitkeep
 git add results/rq3/rq3_overhead.csv
 git add results/rq3/repeat10/
 git add results/rq3/archive/five_round_legacy/
+git add scripts/repeat10/
 ```

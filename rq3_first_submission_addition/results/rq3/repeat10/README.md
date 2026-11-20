@@ -25,3 +25,5 @@
 
 - `rq3_repeat10_rounds.csv`：10 轮逐轮状态和计时；
 - `rq3_repeat10_summary.json`：按上述规则生成的机器可读汇总。
+
+对应的完整运行脚本位于 `../../../scripts/repeat10/`。

@@ -20,6 +20,7 @@ results/rq3/repeat10/rq3_repeat10_rounds.csv
 results/rq3/repeat10/rq3_repeat10_summary.json
 reports/rq3-final.md
 scripts/repeat_rq3.sh
+scripts/repeat10/run_rq3_repeat10.sh
 ```
 
 ## CVE-2017-6346 十轮配对正式实验
@@ -28,15 +29,19 @@ scripts/repeat_rq3.sh
 
 早期五轮整轮计时数据仅作为历史记录，位于 `results/rq3/archive/five_round_legacy/`，不作为主结论，也不与十轮结果合并。
 
+十轮正式结果的实际测量与汇总脚本位于 `scripts/repeat10/`。11 个 benchmark 的横向基线仍使用 `scripts/run_rq3.sh` 和 `scripts/run_rq3_inside.sh`，两类实验的对象与统计目的不同。
+
 ## 尚未完成
 
 IPB、IDB、PCT 尚未进行实际测量，当前标记为 `NOT_RUN`。由成员 liyucheng 进行此部分操作。
 
-## 运行方式
+## 正式十轮实验运行方式
 
-在 PERIOD 容器内执行：
+先将十轮脚本复制进已有 PERIOD 容器，再执行：
 
 ```bash
-chmod +x scripts/repeat_rq3.sh
-scripts/repeat_rq3.sh 2017-6346 5 600
+docker cp scripts/repeat10/. period-rq3-local:/tmp/rq3-repeat10/
+docker exec -it period-rq3-local bash /tmp/rq3-repeat10/run_rq3_repeat10.sh
 ```
+
+`scripts/repeat_rq3.sh` 是早期五轮历史流程，仅为追溯保留，不用于生成当前主结论。
