@@ -1,0 +1,545 @@
+Starting run
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 1
+execution time: 1.57541418076 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 2
+execution time: 1.23027610779 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 3
+execution time: 1.46244502068 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 4
+execution time: 1.47903990746 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 5
+execution time: 1.15823984146 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 6
+execution time: 1.39963316917 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 7
+execution time: 1.12854218483 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 8
+execution time: 1.49483084679 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 9
+execution time: 1.53436279297 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 10
+execution time: 1.37978887558 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 11
+execution time: 1.53050112724 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 12
+execution time: 1.54072904587 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+bluetooth_driver_bad.x: bluetooth_driver_bad.c:52: BCSP_PnpAdd: Assertion `!stopped' failed.
+HandleSignalReceived 0 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <bluetooth_driver_bad.x> 5e4 ??:0
+ <libc.so.6> 217e9 ??:0
+ <bluetooth_driver_bad.x> 807 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/bluetooth_driver_bad.c:82
+ <bluetooth_driver_bad.x> 775 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/bluetooth_driver_bad.c:52
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 13
+execution time: 1.47430205345 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 14
+execution time: 1.49589896202 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 15
+execution time: 1.51354289055 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 16
+execution time: 1.31413316727 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 17
+execution time: 1.48970484734 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 18
+execution time: 1.47139501572 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 19
+execution time: 1.43991208076 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 20
+execution time: 1.41421890259 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 21
+execution time: 1.12145090103 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 22
+execution time: 1.47391009331 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./bluetooth_driver_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+[CHESS] search done
+finished execution 23
+execution time: 1.22588086128 seconds
+NO MORE EXECUTIONS
+run time: 32.351765871 seconds
+['./run.py', 'bluetooth_driver_bad']
+['runner', './bluetooth_driver_bad.x', '']

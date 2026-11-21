@@ -1,0 +1,2507 @@
+Starting run
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 1
+execution time: 1.7673740387 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 2
+execution time: 1.78620505333 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 3
+execution time: 1.86053919792 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 4
+execution time: 1.73410892487 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 5
+execution time: 1.8570868969 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 6
+execution time: 1.56355404854 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 7
+execution time: 1.3729429245 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 8
+execution time: 1.66276693344 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 9
+execution time: 1.5719769001 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 10
+execution time: 1.77117490768 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 11
+execution time: 1.80594301224 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 12
+execution time: 1.68402814865 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 13
+execution time: 1.88181591034 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 14
+execution time: 2.91066479683 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 15
+execution time: 2.46495294571 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 16
+execution time: 2.46297001839 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 17
+execution time: 1.49549007416 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 18
+execution time: 1.58899497986 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 19
+execution time: 1.48440504074 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 20
+execution time: 1.79431509972 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 21
+execution time: 1.42301988602 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 22
+execution time: 1.73693799973 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 23
+execution time: 1.67702102661 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 24
+execution time: 1.6435918808 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 25
+execution time: 1.64571213722 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 26
+execution time: 1.66261601448 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 27
+execution time: 1.72198295593 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 28
+execution time: 1.61721205711 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 29
+execution time: 1.59295511246 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 30
+execution time: 2.19318795204 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 31
+execution time: 1.34367179871 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 32
+execution time: 1.5635330677 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 33
+execution time: 1.85776400566 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 34
+execution time: 1.73282694817 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 35
+execution time: 1.54800701141 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 36
+execution time: 1.54306292534 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 37
+execution time: 1.86055183411 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 38
+execution time: 1.84277200699 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 39
+execution time: 1.70298814774 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 40
+execution time: 1.72657203674 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 41
+execution time: 1.74864912033 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 42
+execution time: 1.67663097382 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 43
+execution time: 1.72232103348 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 44
+execution time: 1.83127307892 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 45
+execution time: 1.71176409721 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 46
+execution time: 1.70055603981 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 47
+execution time: 1.75387501717 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 48
+execution time: 1.41155409813 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 49
+execution time: 1.72305321693 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 50
+execution time: 1.91875100136 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 51
+execution time: 1.41486501694 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 52
+execution time: 1.69367909431 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 53
+execution time: 1.44798088074 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 54
+execution time: 1.81877398491 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 55
+execution time: 1.67397880554 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 56
+execution time: 1.73993015289 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 57
+execution time: 1.57718920708 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 58
+execution time: 1.61435484886 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+HandleThreadStart 4
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 59
+execution time: 1.7027490139 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 820 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:43
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 60
+execution time: 1.80953192711 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 61
+execution time: 1.75626802444 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 62
+execution time: 1.63927292824 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 63
+execution time: 1.59795808792 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 831 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:44
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 64
+execution time: 1.76197218895 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+lazy01_bad.x: lazy01_bad.c:27: thread3: Assertion `0' failed.
+HandleSignalReceived 4 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <lazy01_bad.x> 644 ??:0
+ <libc.so.6> 217e9 ??:0
+ <lazy01_bad.x> 842 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:45
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+Stack for thread 4:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <lazy01_bad.x> 79b /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/lazy01_bad.c:27
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 65
+execution time: 1.76256895065 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 0 -pb_limit 2 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./lazy01_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+HandleThreadStart 4
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 4
+HandleThreadExit 4
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+[CHESS] search done
+finished execution 66
+execution time: 1.26818490028 seconds
+NO MORE EXECUTIONS
+run time: 113.64266181 seconds
+['./run.py', 'lazy01_bad']
+['runner', './lazy01_bad.x', '']

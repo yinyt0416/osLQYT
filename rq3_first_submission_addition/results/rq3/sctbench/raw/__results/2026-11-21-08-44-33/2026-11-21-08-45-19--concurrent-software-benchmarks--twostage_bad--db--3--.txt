@@ -1,0 +1,1266 @@
+Starting run
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 0
+Saving race DB
+finished execution 1
+execution time: 1.2864420414 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 2
+execution time: 1.38032889366 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 3
+execution time: 1.61677193642 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 4
+execution time: 1.71269702911 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 5
+execution time: 1.69585704803 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 6
+execution time: 1.6793718338 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 7
+execution time: 1.7533531189 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 8
+execution time: 1.58700108528 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 9
+execution time: 2.27422595024 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 10
+execution time: 2.09132409096 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 11
+execution time: 1.38717412949 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 12
+execution time: 1.90086007118 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Bug found!
+twostage_bad.x: twostage_bad.c:48: funcB: Assertion `0' failed.
+HandleSignalReceived 3 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <twostage_bad.x> 814 ??:0
+ <libc.so.6> 217e9 ??:0
+ <twostage_bad.x> d05 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:97
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <twostage_bad.x> 912 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:23
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <twostage_bad.x> a0a /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:48
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 13
+execution time: 1.76028084755 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 14
+execution time: 1.64371705055 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 15
+execution time: 1.79888486862 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 16
+execution time: 1.2778429985 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 17
+execution time: 1.65545392036 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 18
+execution time: 1.83292412758 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 19
+execution time: 1.654088974 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 20
+execution time: 1.73843288422 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 21
+execution time: 1.30351114273 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 22
+execution time: 1.43311810493 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 1
+Saving race DB
+finished execution 23
+execution time: 1.41486501694 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 24
+execution time: 1.61134505272 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 25
+execution time: 1.28560876846 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 26
+execution time: 1.96390604973 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+Thread Exit 2
+HandleThreadExit 2
+HandleThreadStart 3
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 27
+execution time: 1.74279785156 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 28
+execution time: 1.44909310341 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 29
+execution time: 1.65653800964 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 30
+execution time: 1.71103215218 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 31
+execution time: 1.57436800003 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 32
+execution time: 1.67474389076 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 33
+execution time: 1.62890791893 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 34
+execution time: 1.70166897774 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 35
+execution time: 1.30391788483 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 36
+execution time: 1.63074207306 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 37
+execution time: 1.3849670887 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 38
+execution time: 1.35917305946 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 39
+execution time: 1.71776413918 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Bug found!
+twostage_bad.x: twostage_bad.c:48: funcB: Assertion `0' failed.
+HandleSignalReceived 3 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <twostage_bad.x> 814 ??:0
+ <libc.so.6> 217e9 ??:0
+ <twostage_bad.x> d05 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:97
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <twostage_bad.x> 912 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:23
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <twostage_bad.x> a0a /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:48
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 40
+execution time: 1.67806005478 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 2
+Saving race DB
+finished execution 41
+execution time: 1.3079791069 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 42
+execution time: 1.29892706871 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 43
+execution time: 1.57189702988 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 44
+execution time: 1.47707891464 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 45
+execution time: 1.70862293243 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Thread Exit 2
+HandleThreadExit 2
+Thread Exit 3
+HandleThreadExit 3
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+
+Number of preemptions/delays: 3
+Saving race DB
+finished execution 46
+execution time: 1.58079314232 seconds
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/systematic_controller.so -enable_debug 0 -search_in search.db -search_out search.db -race_in ../run_race/race.db -race_out race.db -sinfo_in ../run_race/sinfo.db -sinfo_out sinfo.db -program_in program.db -program_out program.db -enable_random_scheduler 0 -enable_chess_scheduler 1 -unit_size 1 -check_mem 0 -enable_djit 0 -sched_race 1 -sched_app 1 -seal_after_one 0 -por 0 -fair 0 -pb 1 -delay_bound 1 -pb_limit 3 -por_info_path por_info -debug_syscall 0 -debug_call_return 0 -debug_track_clk 1 -abort_diverge 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -realtime_priority 1 -debug_atomic 0 -debug_malloc 0 -stat_out stat.out -debug_out stdout -debug_main 0 -cpu 0 -debug_mem 0 -- ./twostage_bad.x
+Loading race DB
+hook signal 1
+hook syscall 1
+hook call return 1
+desc_.HookBeforeMem()0
+desc_.TrackInstCount()0
+desc_.HookAtomicInst()0
+desc_.HookMem()0
+desc_.HookCallReturn()1
+HandleThreadStart 0
+HandleThreadStart 2
+HandleThreadStart 3
+Bug found!
+twostage_bad.x: twostage_bad.c:48: funcB: Assertion `0' failed.
+HandleSignalReceived 3 6 
+ERROR: signal 6 !!!!
+Stack for thread 1:
+ <twostage_bad.x> 814 ??:0
+ <libc.so.6> 217e9 ??:0
+ <twostage_bad.x> d05 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:97
+Stack for thread 2:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <twostage_bad.x> 912 /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:23
+Stack for thread 3:
+ <libc.so.6> f648b ??:0
+ <libpthread.so.0> 7e92 ??:0
+ <twostage_bad.x> a0a /home/vagrant/sctbench/benchmarks/concurrent-software-benchmarks/twostage_bad.c:48
+ <libc.so.6> 2eebd ??:0
+ <libc.so.6> 2ee19 ??:0
+ <libc.so.6> 39796 ??:0
+Program EXIT
+
+Number of preemptions/delays: 3
+[CHESS] search done
+finished execution 47
+execution time: 1.88408684731 seconds
+NO MORE EXECUTIONS
+run time: 75.790099144 seconds
+['./run.py', 'twostage_bad']
+['runner', './twostage_bad.x', '']

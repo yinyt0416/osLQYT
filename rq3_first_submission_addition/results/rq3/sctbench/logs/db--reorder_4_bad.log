@@ -1,0 +1,22 @@
+['./run.sh', 'reorder_4_bad']
+['./run.sh', 'reorder_4_bad']
+['./run.sh', 'reorder_4_bad']
+['./run.sh', 'reorder_4_bad']
+ Timeout
+Traceback (most recent call last):
+  File "/home/vagrant/sctbench/scripts/run_single.py", line 187, in <module>
+    run(test, timelimit, outfile)
+  File "/home/vagrant/sctbench/scripts/run_single.py", line 96, in run
+    command.run(timeout+20, outfile)
+  File "/home/vagrant/sctbench/scripts/run_single.py", line 68, in run
+    raise TestTimeoutException()
+__main__.TestTimeoutException
+['/home/vagrant/sctbench/scripts/run_single.sh', 'concurrent-software-benchmarks', 'reorder_4_bad', '/home/vagrant/sctbench/benchmarks/__results/2026-11-21-08-33-26', '300', '2', '5', '16', '0', '4', '10000', '0', '0', 'db']
+Traceback (most recent call last):
+  File "/home/vagrant/sctbench/scripts/run_many.py", line 181, in <module>
+    call_check(cmd, qsubargs + [str(0), str(args.max), str(limit), str(seed), "0","db"])
+  File "/home/vagrant/sctbench/scripts/run_many.py", line 116, in call_check
+    subprocess.check_call(qsubargs)
+  File "/usr/lib/python2.7/subprocess.py", line 511, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/home/vagrant/sctbench/scripts/run_single.sh', 'concurrent-software-benchmarks', 'reorder_4_bad', '/home/vagrant/sctbench/benchmarks/__results/2026-11-21-08-33-26', '300', '2', '5', '16', '0', '4', '10000', '0', '0', 'db']' returned non-zero exit status 1

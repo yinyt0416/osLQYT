@@ -1,0 +1,5 @@
+['./run.sh', 'token_ring_bad']
+['./run.sh', 'token_ring_bad']
+['./run.sh', 'token_ring_bad']
+['./run.sh', 'token_ring_bad']
+['/home/vagrant/sctbench/scripts/run_single.sh', 'concurrent-software-benchmarks', 'token_ring_bad', '/home/vagrant/sctbench/benchmarks/__results/2026-11-21-08-41-31', '300', '2', '5', '11', '0', '4', '10000', '0', '0', 'db']

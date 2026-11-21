@@ -221,7 +221,11 @@ def run(a,sub):
             cmd=['python3','-u',os.path.join(PERIOD,'tool/DBDS/run_PDS_rq3_unified.py'),'-y','-d','3','-f',str(a.budget),'-t',str(a.target_timeout),'./program']
             cwd=runpath
         else:
-            cmd=['python','-u',os.path.join(SCT,'scripts/run_many.py'),'--mode',{'IPB':'pb','IDB':'db'}[a.tool],'--max','4','--limit',str(a.budget),'--timelimit',str(a.wall_timeout),'--numjobs','1',os.path.join(subj,'subject.txt')]
+            mode={'IPB':'pb','IDB':'db','PCT':'pct'}[a.tool]
+            # The PERIOD evaluation uses PCT with bug depth d=3. IPB/IDB
+            # iterate bounds 0..4, matching the existing unified baseline plan.
+            max_bound='3' if a.tool=='PCT' else '4'
+            cmd=['python','-u',os.path.join(SCT,'scripts/run_many.py'),'--mode',mode,'--max',max_bound,'--limit',str(a.budget),'--timelimit',str(a.wall_timeout),'--numjobs','1',os.path.join(subj,'subject.txt')]
             cwd=SCT
         outer_rc,wall,outer_timeout=execute(cmd,cwd,logfile,env,cap=a.wall_timeout)
         events=[]

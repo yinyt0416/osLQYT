@@ -1,0 +1,5 @@
+['./run.sh', 'account_bad']
+['./run.sh', 'account_bad']
+['./run.sh', 'account_bad']
+['./run.sh', 'account_bad']
+['/home/vagrant/sctbench/scripts/run_single.sh', 'concurrent-software-benchmarks', 'account_bad', '/home/vagrant/sctbench/benchmarks/__results/2026-11-20-22-42-54', '300', '2', '4', '8', '0', '4', '10000', '0', '0', 'db']

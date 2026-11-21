@@ -1,0 +1,16 @@
+Starting run
+Starting execution
+/home/vagrant/sctbench/pin/pin.sh -injection child -t /home/vagrant/sctbench/maple/build-release/race_pct_profiler.so -race_in ../run_race/race.db -race_out ../run_race/race.db -pct_history ../run_race/pct.histo -sinfo_in ../run_race/sinfo.db -sinfo_out ../run_race/sinfo.db -stat_out ../run_race/stat.out -ignore_lib 0 -enable_djit 1 -enable_debug 0 -count_mem 1 -debug_syscall 0 -debug_call_return 0 -strict 0 -debug_track_clk 1 -unit_size 1 -track_racy_inst 0 -debug_pthread 0 -debug_track_callstack 0 -debug_atomic 0 -debug_malloc 0 -debug_mem 0 -debug_out stdout -debug_main 0 -depth 3 -cpu 0 -- ./main
+Loading race DB
+HandleThreadStart 0
+HandleThreadStart 1
+Thread Exit 1
+HandleThreadExit 1
+Thread Exit 0
+HandleThreadExit 0
+Program EXIT
+Saving race DB
+finished execution 1
+execution time: 0.531465053558 seconds
+NO MORE EXECUTIONS
+run time: 0.531855821609 seconds

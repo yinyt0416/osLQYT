@@ -1,0 +1,11 @@
+# SCTBench subjects matching the ten non-smoke PERIOD RQ3 subjects.
+conc-bugs stringbuffer-jdk1.4 2 10
+concurrent-software-benchmarks account_bad 4 8
+concurrent-software-benchmarks bluetooth_driver_bad 2 13
+concurrent-software-benchmarks circular_buffer_bad 3 31
+concurrent-software-benchmarks lazy01_bad 4 11
+concurrent-software-benchmarks reorder_3_bad 4 12
+concurrent-software-benchmarks reorder_4_bad 5 16
+concurrent-software-benchmarks token_ring_bad 5 11
+concurrent-software-benchmarks twostage_bad 3 11
+concurrent-software-benchmarks wronglock_3_bad 5 25

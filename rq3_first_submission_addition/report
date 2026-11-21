@@ -1,4 +1,5 @@
 PERIOD RQ3 复现总结
 RQ3 比较 Period 与 native 程序的运行开销。统一队列结果包含 11 个 SCTBench/CB 科目；手动补充表包含 10 个 ConVul-CVE 科目，其中 9 个有有效 Period 时间，CVE-2016-1973 在 Dry Run 阶段触发 AddressSanitizer SEGV，因此不计算 slowdown。
 所有手动 CVE 数据均为单次测量。Docker Desktop/WSL2 的宿主负载和调度差异可能影响 wall-clock 时间，因此这些数据用于流程验证和相对趋势比较。
-IPB、IDB、PCT 未运行。它们依赖旧版 Pin 和旧 Linux 内核；当前 WSL2 6.x 内核不兼容。不能把 stub 或 NOT_RUN 行改成实验结果。
+IPB、IDB、PCT 已在 Linux 3.2.0-23 虚拟机和 SCTBench commit d59ab26ddaedcd575ffb6a1f5e9711f7d6d2d9f2 上完成。race 10/10 OK；IPB 为 5 OK、5 超时；IDB 为 7 OK、3 超时；PCT 为 10 个超时。40/40 组合均有终态记录，18 个 TIMEOUT_OR_ERROR 经日志核对均为超时。
+这批 SCTBench 结果记录搜索任务总墙钟时间和终态，不是相对 Native 的单次执行 slowdown，因此只能定性支持基线开销较高，不能宣称精确复现论文 Figure 7 的 10–500x 范围。完整证据位于 results/rq3/sctbench/，最终说明位于 reports/rq3-sctbench-final.md。
